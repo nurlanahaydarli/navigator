@@ -613,3 +613,50 @@ footer{
     }
   }
 }
+.label_list{
+  margin-top: 32px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  .label_box{
+    padding: 14px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid rgba(10, 34, 98, 0.45);
+    border-radius: 4px;
+    gap: 8px;
+    span{
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 16px;
+      color: $text-dark-blue;
+    }
+  }
+}
+
+.service_box{
+  padding: 24px;
+  height: 148px;
+  background-color: rgba(10, 34, 98, 0.45);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 32px;
+  margin-bottom: 24px;
+  img{
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+  }
+  h5{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #fff;
+
+  }
+}
