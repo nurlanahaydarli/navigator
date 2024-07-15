@@ -135,4 +135,8 @@ a {
 * {
     box-sizing: border-box;
 }
+input,select,button{
+    outline: none;
+    border: none;
+}
 
