@@ -2,6 +2,7 @@ $text-color: #1A1A1A;
 $text-color-second: #9B823E;
 $text-dark-blue: #00284B;
 $text-blue: #41688D;
+$brand-color:#AE8A29;
 
 body {
   font-family: 'Inter', sans-serif;
@@ -903,6 +904,27 @@ footer {
       height: 50px;
       overflow: hidden;
       text-overflow: ellipsis;
+    }
+  }
+  .box_end{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    .start_box {
+      p{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.8px;
+        color: $brand-color;
+      }
+    }
+    span{
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16.8px;
+      color: $text-blue;
+
     }
   }
   .status{
