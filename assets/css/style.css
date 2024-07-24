@@ -138,7 +138,7 @@ body {
 .section_padding .section_text_box h2, .section_padding .section_text_box h1 {
   color: #00284B;
 }
-.section_padding .section_text_box span {
+.section_padding .section_text_box > span {
   font-size: 16px;
   font-weight: 500;
   color: #00284B;
@@ -855,6 +855,274 @@ footer .footer_bottom p {
 }
 .box_item .icon.active svg, .box_item .icon:hover svg {
   fill: #00284B;
+}
+
+.document_box {
+  padding: 24px;
+  background-color: rgba(10, 34, 98, 0.25);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  gap: 24px;
+}
+.document_box .img_box {
+  width: 80px;
+  height: 80px;
+  padding: 16px;
+  background-color: #567eb0;
+  border-radius: 8px;
+}
+.document_box .img_box img {
+  width: 48px;
+  object-fit: contain;
+  height: 48px;
+}
+.document_box .box_content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.document_box .box_content h4 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+  color: #fff;
+}
+.document_box .box_content p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20.8px;
+}
+
+.category_list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.category_list ul .category_accordion .accordion_top {
+  display: flex;
+  padding: 16px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.category_list ul .category_accordion .accordion_top p {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20.8px;
+  color: #00284B;
+}
+.category_list ul .category_accordion .accordion_top span {
+  cursor: pointer;
+}
+.category_list ul .category_accordion .accordion_top span img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+.category_list ul li.active, .category_list ul li:hover {
+  background-color: rgba(10, 34, 98, 0.05);
+}
+
+.accordion_body {
+  display: none;
+}
+
+.accordion_top.active + .accordion_body {
+  display: block;
+}
+
+.accordion_top.active span {
+  transform: rotate(90deg);
+}
+
+.accordion_top span {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.category_list_right ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.category_list_right ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background-color: rgba(10, 34, 98, 0.05);
+  gap: 40px;
+}
+.category_list_right ul li span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.8px;
+  color: #00284b;
+}
+
+.document_category_detail_top {
+  padding: 32px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.document_category_detail_top .left_side {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+}
+.document_category_detail_top .left_side a {
+  border: 1px solid #ae8a29;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #ae8a29;
+  border-radius: 16px;
+}
+.document_category_detail_top .left_side ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  color: #757575;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+}
+.document_category_detail_top .right_side {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+}
+.document_category_detail_top .right_side .btn_custom {
+  padding: 12px 20px;
+  background-color: transparent;
+  transition: all 0.5s;
+}
+.document_category_detail_top .right_side .btn_custom.button_ghost_yellow {
+  border: 1px solid #ae8a29;
+  color: #ae8a29;
+}
+.document_category_detail_top .right_side .btn_custom.button_ghost_yellow:hover {
+  background-color: #ae8a29;
+  color: #fff;
+}
+.document_category_detail_top .right_side .btn_custom.button_yellow {
+  background-color: #ae8a29;
+  color: #fff;
+  border: 1px solid #ae8a29;
+}
+.document_category_detail_top .right_side .btn_custom.button_yellow:hover {
+  background-color: #85691f;
+}
+.document_category_detail_top .right_side .btn_custom.btn_dark_blue {
+  background-color: #00284B;
+  border: 1px solid #00284B;
+  color: #fff;
+}
+.document_category_detail_top .right_side .btn_custom.btn_dark_blue:hover {
+  background-color: #000d18;
+}
+
+.text_list {
+  background-color: #fff;
+  padding: 16px;
+}
+.text_list p {
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: justify;
+  color: #1A1A1A;
+}
+
+.document_detail_box {
+  padding: 32px 0 64px;
+}
+.document_detail_box .nav-tabs {
+  border-bottom: 0;
+  gap: 24px;
+}
+.document_detail_box .nav-tabs .nav-link {
+  border-radius: 4px;
+  border: 1px solid #AE8A29;
+  color: #AE8A29;
+  max-width: 48%;
+  transition: 0.5s all;
+  width: 100%;
+  padding: 16px 20px;
+}
+.document_detail_box .nav-tabs .nav-link.active, .document_detail_box .nav-tabs .nav-link:hover {
+  background-color: #AE8A29;
+  color: #fff;
+}
+
+.radio_list {
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 24px 0;
+}
+.radio_list h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #1e1e1e;
+}
+.radio_list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.radio_list ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+.radio_list ul li h4, .radio_list ul li p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  margin-bottom: 8px;
+  color: #0A2262;
+}
+.radio_list ul li .left_side input {
+  display: none;
+}
+.radio_list ul li .left_side input:checked ~ label:after {
+  display: block;
+}
+.radio_list ul li .left_side label {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid #9B823E;
+  position: relative;
+  cursor: pointer;
+}
+.radio_list ul li .left_side label:after {
+  display: none;
+  content: " ";
+  width: 12px;
+  border-radius: 50%;
+  height: 12px;
+  background-color: #9B823E;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /*# sourceMappingURL=style.css.map */
