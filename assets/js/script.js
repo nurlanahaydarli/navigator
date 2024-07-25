@@ -1,3 +1,26 @@
+document.querySelector('.episode_top')?.addEventListener('click', function() {
+    document.querySelector('.episode_list ul').classList.toggle('hide');
+});
+
+document.querySelector('.open_filter')?.addEventListener('click', function() {
+    document.querySelector('.filter_bottom').classList.remove('hide');
+    document.querySelector('.close_filter').classList.remove('hide');
+    document.querySelector('.open_filter').classList.add('hide');
+});
+document.querySelector('.close_filter')?.addEventListener('click', function() {
+    document.querySelector('.filter_bottom').classList.add('hide');
+    document.querySelector('.close_filter').classList.add('hide');
+    document.querySelector('.open_filter').classList.remove('hide');
+});
+
+document.querySelectorAll('input[name="radio_list"]')?.forEach((radio) => {
+    radio.addEventListener('change', function() {
+        const targetId = this.getAttribute('data-target');
+        document.querySelectorAll('.text_list').forEach((div) => {
+            div.style.display = div.getAttribute('data-id') === targetId ? 'block' : 'none';
+        });
+    });
+});
 document.addEventListener('DOMContentLoaded', function () {
     const accordionSpans = document.querySelectorAll('.accordion_top span');
 
