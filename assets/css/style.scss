@@ -239,7 +239,11 @@ body {
   background-color: rgba(54, 140, 216, 1);
   padding: 14px 24px;
   color: #fff;
-  border: 1px solid rgba(54, 140, 216, 1);;
+  border: 1px solid rgba(54, 140, 216, 1);
+  &:hover{
+    color: #fff;
+    background-color: darken(rgba(54, 140, 216, 1),10%);
+  }
 }
 
 .btn_ghost {
@@ -859,12 +863,14 @@ footer {
       background-color: $text-dark-blue;
       padding: 6px;
       border-radius: 4px;
-      &.main{
+
+      &.main {
         background-color: $text-dark-blue;
         border: 1px solid $text-dark-blue;
       }
-      &.ghost{
-        background-color: transparent!important;
+
+      &.ghost {
+        background-color: transparent !important;
         border: 1px solid $text-dark-blue;
       }
     }
@@ -1569,7 +1575,8 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  .episode_top{
+
+  .episode_top {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1577,24 +1584,27 @@ footer {
     padding: 8px 16px;
     border-radius: 8px;
     cursor: pointer;
-    .click_down{
+
+    .click_down {
       width: 40px;
       height: 40px;
       display: flex;
       justify-content: center;
       align-items: center;
 
-      svg{
+      svg {
         width: 24px;
         height: 24px;
       }
     }
-    h4{
+
+    h4 {
       font-size: 24px;
       font-weight: 700;
       line-height: 31.2px;
       color: $text-dark-blue;
-      span{
+
+      span {
         font-size: 16px;
         font-weight: 500;
         line-height: 16px;
@@ -1605,55 +1615,65 @@ footer {
 
     }
   }
-  .episode_list{
-    ul{
+
+  .episode_list {
+    ul {
       display: flex;
       background-color: rgba(255, 255, 255, 0.25);
       flex-direction: column;
       border-radius: 8px;
-      a{
+
+      a {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding:  20px 16px;
+        padding: 20px 16px;
         border-bottom: 1px solid rgba(45, 72, 96, 0.15);
-        &:hover{
-          background-color:  rgba(255, 255, 255, 0.5);;
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.5);;
         }
 
       }
-      span{
+
+      span {
         font-size: 16px;
         font-weight: 400;
         line-height: 20.8px;
         color: rgba(65, 104, 141, 1);
 
       }
-      .left_side{
+
+      .left_side {
         display: flex;
         align-items: center;
         justify-content: flex-start;
         gap: 4px;
-        .status_video{
+
+        .status_video {
           width: 16px;
           min-width: 16px;
           height: 16px;
           border-radius: 50%;
           border: 1px solid;
-          &.status_done{
+
+          &.status_done {
             background-color: rgba(26, 163, 56, 1);
             border-color: rgba(26, 163, 56, 1);
           }
-          &.status_progress{
+
+          &.status_progress {
             background-color: rgba(174, 138, 41, 1);
             border-color: rgba(174, 138, 41, 1);
           }
-          &.status_waiting{
+
+          &.status_waiting {
             background-color: transparent;
             border-color: rgba(174, 138, 41, 1);
           }
         }
-        p{
+
+        p {
           font-size: 16px;
           font-weight: 400;
           line-height: 20.8px;
@@ -1662,17 +1682,209 @@ footer {
       }
     }
   }
-  .next_video{
+
+  .next_video {
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: 4px;
-    padding:15px 20px;
+    padding: 15px 20px;
     border: 1px solid rgba(174, 138, 41, 1);
     color: rgba(174, 138, 41, 1);
 
   }
 }
+
 .hide {
-  display: none!important;
+  display: none !important;
+}
+
+.training_container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  .training_item {
+    .date_box {
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.45);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      border-radius: 12px;
+      padding: 24px;
+      border: 1px solid rgba(45, 72, 96, 0.15);
+
+      h4 {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+        color: $text-dark-blue;
+      }
+
+      span {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 14px;
+        color: $text-dark-blue;
+      }
+    }
+
+    .training_list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      li {
+        background-color: rgba(255, 255, 255, 0.45);
+        border-radius: 12px;
+        padding: 24px;
+        border: 1px solid rgba(45, 72, 96, 0.15);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .left_box {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 16px;
+
+          .date_detail {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            p {
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 14px;
+              color: $text-dark-blue;
+
+            }
+          }
+          .status{
+            height: 24px;
+            padding: 5px 10px;
+          }
+          .name_detail {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            h4 {
+              font-size: 20px;
+              font-weight: 500;
+              line-height: 24px;
+              color: $text-dark-blue;
+            }
+
+            p {
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 14px;
+              color: $text-dark-blue;
+
+            }
+          }
+        }
+        .right_box{
+          width: 44px;
+          height: 44px;
+          border-radius: 50%;
+          background-color: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          a{
+            &:hover,
+            &.active{
+              svg{
+                path{
+                  fill: $text-dark-blue
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.training_detail_img{
+  h1{
+    font-family: TT Firs Neue Trl;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+    color: rgba(26, 26, 26, 1);
+    margin-bottom: 24px;
+  }
+  img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+}
+.training_detail_text{
+  padding: 16px 24px;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  .w-100{
+    width: 100%;
+  }
+  .w-50{
+    width: 50%;
+  }
+  .detail_item{
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    h5{
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 24px;
+      margin-bottom: 8px;
+      color: $text-dark-blue;
+    }
+    p{
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color: rgba(65, 104, 141, 1);
+    }
+    h4{
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 20px;
+      color: $text-dark-blue;
+
+    }
+  }
+  .detail_bottom{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 16px;
+    .save_training{
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover,
+      &.active{
+        svg{
+          path{
+            fill: $text-dark-blue;
+          }
+        }
+      }
+    }
+  }
 }
