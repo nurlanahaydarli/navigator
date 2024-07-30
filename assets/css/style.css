@@ -1672,6 +1672,9 @@ footer .footer_bottom p {
 .filter_header .filter_flex input::placeholder {
   color: #41688d;
 }
+.filter_header .filter_flex .input_big {
+  width: 114px;
+}
 
 .check_input {
   display: none;
@@ -1725,6 +1728,10 @@ footer .footer_bottom p {
 .filter_buttons .btn_dark_blue {
   border: 1px solid #0a2262;
   background-color: #0a2262;
+}
+
+.mt-42 {
+  margin-top: 42px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1966,6 +1966,7 @@ footer {
       align-items: center;
       gap: 8px;
       margin: 0 8px;
+      //min-width: 30%;
     }
 
     label {
@@ -2009,6 +2010,9 @@ footer {
       &::placeholder {
         color: rgba(65, 104, 141, 1);
       }
+    }
+    .input_big{
+      width: 114px;
     }
 
   }
@@ -2068,4 +2072,7 @@ footer {
     border: 1px solid rgba(10, 34, 98, 1);
     background-color: rgba(10, 34, 98, 1);
   }
+}
+.mt-42{
+  margin-top: 42px;
 }

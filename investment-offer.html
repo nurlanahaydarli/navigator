@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <title>Biznes Navigator</title>
+</head>
+<body>
+
+
+<main class="main_bg">
+    <header>
+        <div class="container">
+            <div class="header_top">
+                <div class="header_nav">
+                    <a href="index.html" class="logo_box">
+                        <img src="assets/img/logo.svg" alt=""/>
+                    </a>
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                    aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="#">Qanunvericilik</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Portal haqqında</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="education.html">Maarifləndirmə</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="services.html">Xidmətlər</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="header_auth">
+                    <div class="login_box">
+                        <a href="#">
+                            <img src="assets/img/auth_icon.svg" alt="">
+                            <span>Daxil ol</span>
+                        </a>
+                    </div>
+                    <div class="search_box">
+                        <a href="#">
+                            <img src="assets/img/search-normal.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="lang_box">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                <span>Az</span> <img src="assets/img/az.png" alt="">
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#"><span>Az</span> <img src="assets/img/az.png"
+                                                                                           alt=""></a></li>
+                                <li><a class="dropdown-item" href="#"><span>Az</span> <img src="assets/img/az.png"
+                                                                                           alt=""></a></li>
+                                <li><a class="dropdown-item" href="#"><span>Az</span> <img src="assets/img/az.png"
+                                                                                           alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="section_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="section_text_box">
+                        <h1 class="section_title_big">
+                            İnvestisiya təklifləri
+                        </h1>
+                        <p class="section_text">
+                            Şirkət qurmaq prosesində lazım olan kadrları tapın. <br>
+                            Vergi öhdəlikləri və əmək qanunları haqqında məlumat.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="section_img">
+                        <img src="assets/img/investment_header.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="filter_header">
+                        <form action="">
+                            <div class="filter_flex">
+                                <div class="input_box">
+                                    <label for="">Ad</label>
+                                    <input type="text" class="input_big">
+                                </div>
+                                <div class="input_box">
+                                    <label for="">İnvestisiya dəyəri</label>
+                                    <input type="text" placeholder="min">
+                                </div>
+                                <div class="input_box">
+                                    <label for="">Sırala</label>
+                                    <select name="" id="">
+                                        <option value="">Nəşr tarixinə görə</option>
+                                    </select>
+                                </div>
+                                <div class="input_box">
+                                    <label for="">No</label>
+                                    <input type="text" class="input_big">
+                                </div>
+                                <div class="input_box">
+                                    <label for="">İnvestisiya dəyəri</label>
+                                    <input type="text" placeholder="max">
+                                </div>
+                                <div class="input_box">
+                                    <label for="">Sırala</label>
+                                    <select name="" id="">
+                                        <option value="">Azdan-çoxa</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="filter_buttons">
+                                <button class="button_yellow">Layihə əlavə et</button>
+                                <button class="button_gray">Filterləri sıfırla</button>
+                                <button class="btn_dark_blue">Axtar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="box_item">
+                        <div class="box_top">
+                            <img src="assets/img/investor_blog.svg" class="main_img" alt="">
+                            <span class="highlights">Önə çıxan</span>
+                            <a href="#" class="icon">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.16689 5.45515L13.2419 3.09682C16.4169 2.03848 18.1419 3.77182 17.0919 6.94682L14.7336 14.0218C13.1502 18.7802 10.5502 18.7802 8.96689 14.0218L8.26689 11.9218L6.16689 11.2218C1.40856 9.63848 1.40856 7.04682 6.16689 5.45515Z" stroke="#0A2262" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8.4248 11.5634L11.4081 8.57178" stroke="#0A2262" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="box_bottom">
+                            <span class="status red">Malİyyələşdİrİlməyİb</span>
+                            <div class="right_text">
+                                66.12%
+                            </div>
+                            <a href="investment-project-detail.html">Texniki Təmir Xidmətləri Göstərəcək Müəssisə
+                            </a>
+                        </div>
+                        <div class="box_end">
+                            <div class="start_box">
+                                <p>2,250,000,00 AZN </p>
+                            </div>
+                            <span>
+                                Qaradağ
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="box_item">
+                        <div class="box_top">
+                            <img src="assets/img/investor_blog.svg" class="main_img" alt="">
+                            <a href="#" class="icon">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.16689 5.45515L13.2419 3.09682C16.4169 2.03848 18.1419 3.77182 17.0919 6.94682L14.7336 14.0218C13.1502 18.7802 10.5502 18.7802 8.96689 14.0218L8.26689 11.9218L6.16689 11.2218C1.40856 9.63848 1.40856 7.04682 6.16689 5.45515Z" stroke="#0A2262" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8.4248 11.5634L11.4081 8.57178" stroke="#0A2262" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="box_bottom">
+                            <span class="status red">Malİyyələşdİrİlməyİb</span>
+                            <a href="investment-project-detail.html">Texniki Təmir Xidmətləri Göstərəcək Müəssisə
+                            </a>
+                        </div>
+                        <div class="box_end">
+                            <div class="start_box">
+                                <p>2,250,000,00 AZN </p>
+                            </div>
+                            <span>
+                                Qaradağ
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="box_item">
+                        <div class="box_top">
+                            <img src="assets/img/investor_blog.svg" class="main_img" alt="">
+                            <a href="#" class="icon">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.16689 5.45515L13.2419 3.09682C16.4169 2.03848 18.1419 3.77182 17.0919 6.94682L14.7336 14.0218C13.1502 18.7802 10.5502 18.7802 8.96689 14.0218L8.26689 11.9218L6.16689 11.2218C1.40856 9.63848 1.40856 7.04682 6.16689 5.45515Z" stroke="#0A2262" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8.4248 11.5634L11.4081 8.57178" stroke="#0A2262" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="box_bottom">
+                            <span class="status red">Malİyyələşdİrİlməyİb</span>
+                            <a href="investment-project-detail.html">Budgety
+                            </a>
+                        </div>
+                        <div class="box_end">
+                            <div class="start_box">
+                                <p>100,000,00 AZN </p>
+                            </div>
+                            <span>
+                                Bakı
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="box_item">
+                        <div class="box_top">
+                            <img src="assets/img/investor_blog.svg" class="main_img" alt="">
+                            <a href="#" class="icon">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.16689 5.45515L13.2419 3.09682C16.4169 2.03848 18.1419 3.77182 17.0919 6.94682L14.7336 14.0218C13.1502 18.7802 10.5502 18.7802 8.96689 14.0218L8.26689 11.9218L6.16689 11.2218C1.40856 9.63848 1.40856 7.04682 6.16689 5.45515Z" stroke="#0A2262" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8.4248 11.5634L11.4081 8.57178" stroke="#0A2262" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="box_bottom">
+                            <span class="status green">Malİyyələşdİrİlİb</span>
+                            <div class="right_text">
+                                66.12%
+                            </div>
+                            <a href="investment-project-detail.html">Südlük Damazlıq İnək Təsərrüfatı
+                            </a>
+                        </div>
+                        <div class="box_end">
+                            <div class="start_box">
+                                <p>200,000,00 AZN </p>
+                            </div>
+                            <span>
+                                Xaçmaz
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="box_item">
+                        <div class="box_top">
+                            <img src="assets/img/investor_blog.svg" class="main_img" alt="">
+                            <a href="#" class="icon">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.16689 5.45515L13.2419 3.09682C16.4169 2.03848 18.1419 3.77182 17.0919 6.94682L14.7336 14.0218C13.1502 18.7802 10.5502 18.7802 8.96689 14.0218L8.26689 11.9218L6.16689 11.2218C1.40856 9.63848 1.40856 7.04682 6.16689 5.45515Z" stroke="#0A2262" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8.4248 11.5634L11.4081 8.57178" stroke="#0A2262" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="box_bottom">
+                            <span class="status red">Malİyyələşdİrİlməyİb</span>
+                            <a href="investment-project-detail.html">Texniki Təmir Xidmətləri Göstərəcək Müəssisə
+                            </a>
+                        </div>
+                        <div class="box_end">
+                            <div class="start_box">
+                                <p>2,250,000,00 AZN </p>
+                            </div>
+                            <span>
+                                Qaradağ
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="box_item">
+                        <div class="box_top">
+                            <img src="assets/img/investor_blog.svg" class="main_img" alt="">
+                            <a href="#" class="icon">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.16689 5.45515L13.2419 3.09682C16.4169 2.03848 18.1419 3.77182 17.0919 6.94682L14.7336 14.0218C13.1502 18.7802 10.5502 18.7802 8.96689 14.0218L8.26689 11.9218L6.16689 11.2218C1.40856 9.63848 1.40856 7.04682 6.16689 5.45515Z" stroke="#0A2262" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8.4248 11.5634L11.4081 8.57178" stroke="#0A2262" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="box_bottom">
+                            <span class="status red">Malİyyələşdİrİlməyİb</span>
+                            <a href="investment-project-detail.html">Budgety
+                            </a>
+                        </div>
+                        <div class="box_end">
+                            <div class="start_box">
+                                <p>100,000,00 AZN </p>
+                            </div>
+                            <span>
+                                Bakı
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="box_item">
+                        <div class="box_top">
+                            <img src="assets/img/investor_blog.svg" class="main_img" alt="">
+                            <a href="#" class="icon">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.16689 5.45515L13.2419 3.09682C16.4169 2.03848 18.1419 3.77182 17.0919 6.94682L14.7336 14.0218C13.1502 18.7802 10.5502 18.7802 8.96689 14.0218L8.26689 11.9218L6.16689 11.2218C1.40856 9.63848 1.40856 7.04682 6.16689 5.45515Z" stroke="#0A2262" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8.4248 11.5634L11.4081 8.57178" stroke="#0A2262" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="box_bottom">
+                            <span class="status green">Malİyyələşdİrİlİb</span>
+                            <div class="right_text">
+                                66.12%
+                            </div>
+                            <a href="investment-project-detail.html">Südlük Damazlıq İnək Təsərrüfatı
+                            </a>
+                        </div>
+                        <div class="box_end">
+                            <div class="start_box">
+                                <p>200,000,00 AZN </p>
+                            </div>
+                            <span>
+                                Xaçmaz
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="box_item">
+                        <div class="box_top">
+                            <img src="assets/img/investor_blog.svg" class="main_img" alt="">
+                            <a href="#" class="icon">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.16689 5.45515L13.2419 3.09682C16.4169 2.03848 18.1419 3.77182 17.0919 6.94682L14.7336 14.0218C13.1502 18.7802 10.5502 18.7802 8.96689 14.0218L8.26689 11.9218L6.16689 11.2218C1.40856 9.63848 1.40856 7.04682 6.16689 5.45515Z" stroke="#0A2262" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8.4248 11.5634L11.4081 8.57178" stroke="#0A2262" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="box_bottom">
+                            <span class="status red">Malİyyələşdİrİlməyİb</span>
+                            <a href="investment-project-detail.html">Texniki Təmir Xidmətləri Göstərəcək Müəssisə
+                            </a>
+                        </div>
+                        <div class="box_end">
+                            <div class="start_box">
+                                <p>2,250,000,00 AZN </p>
+                            </div>
+                            <span>
+                                Qaradağ
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="box_item">
+                        <div class="box_top">
+                            <img src="assets/img/investor_blog.svg" class="main_img" alt="">
+                            <a href="#" class="icon">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.16689 5.45515L13.2419 3.09682C16.4169 2.03848 18.1419 3.77182 17.0919 6.94682L14.7336 14.0218C13.1502 18.7802 10.5502 18.7802 8.96689 14.0218L8.26689 11.9218L6.16689 11.2218C1.40856 9.63848 1.40856 7.04682 6.16689 5.45515Z" stroke="#0A2262" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8.4248 11.5634L11.4081 8.57178" stroke="#0A2262" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="box_bottom">
+                            <span class="status red">Malİyyələşdİrİlməyİb</span>
+                            <a href="investment-project-detail.html">Budgety
+                            </a>
+                        </div>
+                        <div class="box_end">
+                            <div class="start_box">
+                                <p>100,000,00 AZN </p>
+                            </div>
+                            <span>
+                                Bakı
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="box_item">
+                        <div class="box_top">
+                            <img src="assets/img/investor_blog.svg" class="main_img" alt="">
+                            <a href="#" class="icon">
+                                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.16689 5.45515L13.2419 3.09682C16.4169 2.03848 18.1419 3.77182 17.0919 6.94682L14.7336 14.0218C13.1502 18.7802 10.5502 18.7802 8.96689 14.0218L8.26689 11.9218L6.16689 11.2218C1.40856 9.63848 1.40856 7.04682 6.16689 5.45515Z" stroke="#0A2262" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8.4248 11.5634L11.4081 8.57178" stroke="#0A2262" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="box_bottom">
+                            <span class="status green">Malİyyələşdİrİlİb</span>
+                            <div class="right_text">
+                                66.12%
+                            </div>
+                            <a href="investment-project-detail.html">Südlük Damazlıq İnək Təsərrüfatı
+                            </a>
+                        </div>
+                        <div class="box_end">
+                            <div class="start_box">
+                                <p>200,000,00 AZN </p>
+                            </div>
+                            <span>
+                                Xaçmaz
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination_list mt-48">
+                <ul class="">
+                    <li>
+                        <button><img src="assets/img/left_icon.svg" alt=""></button>
+                    </li>
+                    <li>
+                        <a href="#" class="active">
+                            1
+                        </a>
+                    </li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">...</a></li>
+                    <li><a href="#">15</a></li>
+                    <li><a href="#">16</a></li>
+                    <li>
+                        <button><img src="assets/img/right_icon.svg" alt=""></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="container">
+        <div class="footer_box">
+            <div class="footer_left">
+                <img src="assets/img/footer_logo.svg" alt="">
+                <ul class="footer_links">
+                    <li>
+                        <a href="#">Qanunvericilik</a>
+                    </li>
+                    <li>
+                        <a href="#">Portal haqqında</a>
+                    </li>
+                    <li>
+                        <a href="#">Xidmətlər</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_right">
+                <ul>
+                    <li><a href="#"><img src="assets/img/fb.svg" alt=""></a></li>
+                    <li><a href="#"><img src="assets/img/insta.svg" alt=""></a></li>
+                    <li><a href="#"><img src="assets/img/x.svg" alt=""></a></li>
+                    <li><a href="#"><img src="assets/img/youtube.svg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <p>© Kiçik və Orta Biznesin İnkişafı Agentliyi </p>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
