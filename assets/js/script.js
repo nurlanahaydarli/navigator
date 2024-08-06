@@ -1,3 +1,6 @@
+document.querySelector('.check_plan')?.addEventListener('change', function() {
+    document.querySelector('.additional_filter').classList.toggle('hide');
+});
 document.querySelector('.episode_top')?.addEventListener('click', function() {
     document.querySelector('.episode_list ul').classList.toggle('hide');
 });
