@@ -2405,4 +2405,63 @@ footer .footer_bottom p {
   gap: 24px;
 }
 
+.law_category_list {
+  padding: 24px;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.law_category_list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.law_category_list ul li a {
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid #ae8a29;
+  color: #ae8a29;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  display: block;
+  transition: all 0.5s;
+}
+.law_category_list ul li a:hover, .law_category_list ul li a.active {
+  background-color: #ae8a29;
+  color: #fff;
+}
+
+.law_list {
+  padding: 24px;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.law_list h4 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 24px;
+  color: #1e1e1e;
+}
+.law_list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.law_list ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  padding: 14px;
+  border-radius: 4px;
+  border: 1px solid rgba(10, 34, 98, 0.35);
+}
+.law_list ul li span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.6px;
+  color: #050f21;
+}
+
 /*# sourceMappingURL=style.css.map */
