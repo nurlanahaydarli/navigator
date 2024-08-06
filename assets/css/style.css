@@ -2370,4 +2370,39 @@ footer .footer_bottom p {
   object-fit: cover;
 }
 
+.accordion_list .accordion-item {
+  background-color: transparent;
+  margin-bottom: 24px;
+  border: 1px solid rgba(10, 34, 98, 0.45);
+  border-radius: 4px;
+}
+.accordion_list .accordion-item .accordion-header {
+  border-color: rgba(10, 34, 98, 0.45);
+}
+.accordion_list .accordion-item .accordion-button:not(.collapsed) {
+  background-color: transparent;
+}
+.accordion_list .accordion-item .accordion-button {
+  background: transparent;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #0a2262;
+}
+
+.accordion_list h4 {
+  margin-bottom: 24px;
+}
+.accordion_list h4, .accordion_list li {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20.8px;
+  color: #0a2262;
+}
+.accordion_list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
 /*# sourceMappingURL=style.css.map */
