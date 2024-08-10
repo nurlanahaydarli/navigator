@@ -2464,4 +2464,401 @@ footer .footer_bottom p {
   color: #050f21;
 }
 
+.input_list_accordion .list_item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+.input_list_accordion .list_item .input_box_plan {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+}
+.input_list_accordion .list_item .input_box_plan label, .input_list_accordion .list_item .input_box_plan span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #41688d;
+}
+.input_list_accordion .list_item .input_box_plan select {
+  background-color: transparent;
+  border: 1px solid rgba(10, 34, 98, 0.25);
+  padding: 13px 50px 13px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #0a2262;
+  font-weight: 400;
+  line-height: 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("../img/arrow-down-d.svg") no-repeat right 10px center;
+}
+.input_list_accordion .list_item .input_box_plan input {
+  border-radius: 4px;
+  padding: 12px 20px;
+  background-color: transparent;
+  border: 1px solid rgba(10, 34, 98, 0.25);
+  width: 100%;
+}
+.input_list_accordion .list_item .input_box_plan input.input_mid {
+  max-width: 100px;
+}
+.input_list_accordion .list_item .input_box_plan input.input_date {
+  max-width: 125px;
+}
+.input_list_accordion .list_item .input_box_plan .inside_inputs {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+.input_list_accordion .list_item .input_box_plan .inside_inputs .input_xs {
+  width: 48px;
+}
+.input_list_accordion .list_item .input_box_plan input[type=date]::-webkit-inner-spin-button,
+.input_list_accordion .list_item .input_box_plan input[type=date]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+.balance_report {
+  margin: 8px 0;
+}
+.balance_report h4 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #00284b;
+}
+
+.balance_table {
+  border: 1px solid rgba(65, 104, 141, 0.5);
+  border-radius: 4px;
+  padding: 16px;
+  margin: 8px 0;
+  max-width: 580px;
+  width: 100%;
+}
+.balance_table button {
+  border: 1px solid #41688d;
+  background-color: #41688d;
+  border-radius: 4px;
+  padding: 13px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #fff;
+}
+.balance_table table {
+  width: 100%;
+}
+.balance_table td, .balance_table th {
+  padding: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #41688d;
+}
+.balance_table select {
+  background-color: transparent;
+  border: 1px solid rgba(10, 34, 98, 0.25);
+  padding: 13px 50px 13px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #0a2262;
+  font-weight: 400;
+  line-height: 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("../img/arrow-down-d.svg") no-repeat right 10px center;
+}
+.balance_table input {
+  width: 80px;
+  padding: 14px;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid rgba(10, 34, 98, 0.25);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #0a2262;
+  background-color: transparent;
+}
+
+.cloned_inputs {
+  width: fit-content;
+  padding: 16px;
+  border-radius: 4px;
+  border: 1px solid rgba(65, 104, 141, 0.5);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 24px;
+}
+.cloned_inputs .add_btn {
+  margin-bottom: 8px;
+  background-color: #0a2262;
+  border: 1px solid #0a2262;
+  color: #fff;
+  padding: 10px 20px;
+  height: 44px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  border-radius: 4px;
+}
+.cloned_inputs .clone_box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 24px;
+  margin-bottom: 8px;
+}
+.cloned_inputs .clone_box:not(:first-child) label {
+  display: none;
+}
+.cloned_inputs .clone_box:first-child .close_btn {
+  display: none;
+}
+.cloned_inputs .clone_box .single_box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.cloned_inputs .clone_box .single_box input {
+  border: 1px solid rgba(10, 34, 98, 0.25);
+  border-radius: 4px;
+  padding: 10px 20px;
+  height: 44px;
+  background-color: transparent;
+  width: 100px;
+  min-width: 84px;
+}
+.cloned_inputs .clone_box .single_box select {
+  background-color: transparent;
+  border: 1px solid rgba(10, 34, 98, 0.25);
+  padding: 13px 50px 13px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #0a2262;
+  font-weight: 400;
+  line-height: 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("../img/arrow-down-d.svg") no-repeat right 10px center;
+}
+.cloned_inputs .clone_box .close_btn {
+  background-color: #aa261e;
+  border: 1px solid #aa261e;
+  width: 44px;
+  height: 44px;
+  border-radius: 4px;
+}
+.cloned_inputs .clone_box label {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #41688d;
+}
+.cloned_inputs .clone_box .setting_text {
+  width: fit-content;
+  display: inline-block;
+  text-align: center;
+  min-width: 44px;
+  padding: 14px;
+  background-color: #0a2262;
+  border-radius: 4px;
+  margin-right: 8px;
+  max-height: 44px;
+  color: #fff;
+}
+.cloned_inputs .clone_box .setting_text svg {
+  height: 20px;
+}
+
+.form-step .accordion-body {
+  padding: 0 0 32px;
+}
+
+.info_text {
+  margin-top: 32px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #00284b;
+}
+.info_text a {
+  color: #41688d;
+  text-decoration: underline;
+}
+
+.info_text_list {
+  max-width: 950px;
+  margin-bottom: 32px;
+}
+.info_text_list ul li {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 32px;
+  color: #00284b;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.accordion_sub_title {
+  margin-bottom: 32px;
+}
+.accordion_sub_title h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #00284b;
+}
+
+.mw-800 {
+  max-width: 800px !important;
+}
+
+.business_plan_info_list {
+  margin: 80px 0;
+}
+.business_plan_info_list h3 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 32px;
+  color: #00284b;
+  margin-bottom: 24px;
+}
+.business_plan_info_list ul li {
+  color: #00284b;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+}
+.business_plan_info_list ul li span {
+  font-weight: 700;
+}
+
+.download_business_plan button {
+  border-radius: 4px;
+  border: 1px solid #0a2262;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: transparent;
+}
+
+.business_plan_table_bottom {
+  margin-bottom: 24px;
+}
+.business_plan_table_bottom input {
+  border-radius: 4px;
+  padding: 12px 20px;
+  background-color: transparent;
+  border: 1px solid rgba(10, 34, 98, 0.25);
+  text-align: center;
+}
+.business_plan_table_bottom .top_box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.business_plan_table_bottom .top_box span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #41688d;
+}
+.business_plan_table_bottom .top_box input {
+  width: 100px;
+}
+.business_plan_table_bottom .top_box button {
+  border-radius: 4px;
+  background: #0a2262;
+  color: #fff;
+  padding: 14px 16px;
+  border: 1px solid #0a2262;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.business_plan_table_bottom .table_box {
+  margin-bottom: 24px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+  border: 1px solid rgba(65, 104, 141, 0.5);
+  padding: 16px;
+  max-width: 950px;
+}
+.business_plan_table_bottom .table_box th {
+  padding: 14px 8px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #41688d;
+}
+.business_plan_table_bottom .table_box td {
+  padding: 8px 14px;
+}
+.business_plan_table_bottom .table_box td span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 4px;
+  border: 1px solid rgba(10, 34, 98, 0.25);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #0a2262;
+}
+.business_plan_table_bottom .table_box td input {
+  max-width: 320px;
+  width: 100%;
+}
+.business_plan_table_bottom .table_btn button {
+  padding: 12px 18px;
+  background-color: #0a2262;
+  border: 1px solid #0a2262;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.button_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-top: 80px;
+}
+.button_list a {
+  border-radius: 4px;
+  border: 1px solid #ae8a29;
+  padding: 16px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #ae8a29;
+  max-width: 320px;
+  width: 100%;
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */

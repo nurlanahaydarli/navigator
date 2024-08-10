@@ -1,5 +1,39 @@
+
+document.querySelectorAll('.add_btn').forEach(function(button) {
+    button.addEventListener('click', function() {
+        // Find the closest #clone_container within the same section as the clicked button
+        var container = this.closest('.cloned_inputs').querySelector('.clone_container');
+
+        // Find the first .clone_box to clone
+        var boxToClone = container.querySelector('.clone_box');
+
+        // Clone the .clone_box element
+        var clone = boxToClone.cloneNode(true);
+
+        // Clear input fields in the cloned box
+        var inputs = clone.querySelectorAll('input');
+        inputs.forEach(input => input.value = '');
+
+        // Append the cloned box to the container
+        container.appendChild(clone);
+    });
+});
+
+// Event delegation to handle the close button
+document.addEventListener('click', function(e) {
+    if (e.target.closest('.close_btn')) {
+        e.target.closest('.clone_box').remove();
+    }
+});
+
+
+
+
 document.querySelector('.check_plan')?.addEventListener('change', function() {
     document.querySelector('.additional_filter').classList.toggle('hide');
+});
+document.querySelector('.balance_report_input')?.addEventListener('change', function() {
+    document.querySelector('.balance_report').classList.toggle('hide');
 });
 document.querySelector('.episode_top')?.addEventListener('click', function() {
     document.querySelector('.episode_list ul').classList.toggle('hide');

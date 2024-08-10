@@ -24,7 +24,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     document.getElementById('multiStepForm').addEventListener('submit', function (e) {
         e.preventDefault();
-        alert('Form submitted!');
         // Add form submission logic here
     });
 });
