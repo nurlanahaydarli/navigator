@@ -938,6 +938,540 @@
                         </div>
                         <!-- Step 2 -->
                         <div class="form-step">
+                            <div class="accordion" id="accordionExample2">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="expense">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseExpense" aria-expanded="true"
+                                                aria-controls="collapseExpense">
+                                            Sabit xərclər
+                                        </button>
+                                    </h2>
+                                    <div id="collapseExpense" class="accordion-collapse collapse show"
+                                         aria-labelledby="expense" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="input_list_accordion">
+                                                <div class="accordion_top">
+                                                    <span>
+                                                        Xərclərin bölüşdürülməsi bazası
+                                                    </span>
+                                                    <select name="">
+                                                        <option value="">
+                                                            İstehsalat işçilərinin əmək haqqı
+                                                        </option>
+                                                    </select>
+                                                    <a href="#" class="">
+                                                        <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M17 18.9823H13L8.54999 21.9423C7.88999 22.3823 7 21.9123 7 21.1123V18.9823C4 18.9823 2 16.9823 2 13.9823V7.98224C2 4.98224 4 2.98224 7 2.98224H17C20 2.98224 22 4.98224 22 7.98224V13.9823C22 16.9823 20 18.9823 17 18.9823Z"
+                                                                  stroke="#BC911B" stroke-width="1.5"
+                                                                  stroke-miterlimit="10" stroke-linecap="round"
+                                                                  stroke-linejoin="round"/>
+                                                            <path d="M12.0001 11.9122V11.7023C12.0001 11.0223 12.4201 10.6623 12.8401 10.3723C13.2501 10.0923 13.66 9.73227 13.66 9.07227C13.66 8.15227 12.9201 7.41223 12.0001 7.41223C11.0801 7.41223 10.3401 8.15227 10.3401 9.07227"
+                                                                  stroke="#BC911B" stroke-width="1.5"
+                                                                  stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M11.9955 14.3022H12.0045" stroke="#BC911B"
+                                                                  stroke-width="1.5" stroke-linecap="round"
+                                                                  stroke-linejoin="round"/>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                                <p class="accordion_text">
+                                                    Komandadan istifadə edərək asılı sabit xərclər təyin edilə bilər
+                                                    [Ω]. Bir qayda olaraq, sabit xərclərə ərazinin icarəsi (adətən satış
+                                                    xərcləri kimi silinir), kommunal xidmətlərin ödənilməsi (ümumi
+                                                    xərclər) və s.
+                                                </p>
+                                                <div class="flex_inputs my-32">
+                                                    <select name="">
+                                                        <option value="">İcarə xərcləri</option>
+                                                    </select>
+                                                    <button class="btn_dark_blue_accordion">
+                                                        Əlavə et
+                                                    </button>
+                                                </div>
+                                                <div class="cloned_inputs cloned_inputs_section1">
+                                                    <div class="clone_container">
+                                                        <div class="clone_box">
+                                                            <div class="single_box">
+                                                                <label>Ad</label>
+                                                                <input type="text">
+                                                            </div>
+                                                            <div class="single_box">
+                                                                <label>Aylıq məbləğ, azn. </label>
+                                                                <div class="inside_flex">
+                                                                    <input type="text" value="10000">
+                                                                    <span class="setting_text">
+                                                                        ƏDV
+                                                                    </span>
+                                                                    <a href="#" class="setting_text_btn">
+                                                                        <svg width="11" height="13" viewBox="0 0 11 13"
+                                                                             fill="none"
+                                                                             xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M0.375 12.5522V11.0409H2.72159V10.95C1.99811 10.4841 1.42614 9.86664 1.00568 9.0977C0.585227 8.32876 0.375 7.41588 0.375 6.35906C0.375 5.53709 0.503788 4.7852 0.761364 4.10338C1.01894 3.41778 1.38258 2.82687 1.85227 2.33066C2.32197 1.83066 2.87689 1.44429 3.51705 1.17156C4.16098 0.895049 4.86742 0.756791 5.63636 0.756791C6.4053 0.756791 7.10985 0.895049 7.75 1.17156C8.39394 1.44429 8.95076 1.83066 9.42045 2.33066C9.89015 2.82687 10.2538 3.41778 10.5114 4.10338C10.7689 4.7852 10.8977 5.53709 10.8977 6.35906C10.8977 7.41588 10.6875 8.32876 10.267 9.0977C9.84659 9.86664 9.27462 10.4841 8.55114 10.95V11.0409H10.8977V12.5522H6.60227V10.6432C7.07197 10.4462 7.5 10.145 7.88636 9.73975C8.27273 9.33066 8.58144 8.84391 8.8125 8.27952C9.04356 7.71134 9.15909 7.09202 9.15909 6.42156C9.15909 5.6602 9.00947 4.97459 8.71023 4.36475C8.41099 3.75111 7.99621 3.26437 7.46591 2.90452C6.93561 2.54467 6.32576 2.36475 5.63636 2.36475C5.125 2.36475 4.65341 2.46891 4.22159 2.67725C3.78977 2.88179 3.41667 3.16778 3.10227 3.5352C2.78788 3.90262 2.54356 4.33255 2.36932 4.82497C2.19886 5.31361 2.11364 5.84581 2.11364 6.42156C2.11364 7.09202 2.22917 7.71134 2.46023 8.27952C2.69129 8.84391 3 9.33066 3.38636 9.73975C3.77273 10.145 4.20076 10.4462 4.67045 10.6432V12.5522H0.375Z"
+                                                                                  fill="white"/>
+                                                                        </svg>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="single_box">
+                                                                <label>Xərclərin bölüşdürülməsi </label>
+                                                                <select name="" id="">
+                                                                    <option value="">
+                                                                        Ümumi fəaliyyət xərcləri
+                                                                    </option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="single_box">
+                                                                <label>Seçimlər </label>
+                                                                <a href="#" class="setting_text_btn">
+                                                                    <svg width="24" height="25" viewBox="0 0 24 25"
+                                                                         fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M3 9.66223V15.4322C3 17.5522 3 17.5522 5 18.9022L10.5 22.0822C11.33 22.5622 12.68 22.5622 13.5 22.0822L19 18.9022C21 17.5522 21 17.5522 21 15.4422V9.66223C21 7.55223 21 7.55223 19 6.20223L13.5 3.02223C12.68 2.54223 11.33 2.54223 10.5 3.02223L5 6.20223C3 7.55223 3 7.55223 3 9.66223Z"
+                                                                              stroke="white" stroke-width="1.5"
+                                                                              stroke-linecap="round"
+                                                                              stroke-linejoin="round"/>
+                                                                        <path d="M12 15.5522C13.6569 15.5522 15 14.2091 15 12.5522C15 10.8954 13.6569 9.55225 12 9.55225C10.3431 9.55225 9 10.8954 9 12.5522C9 14.2091 10.3431 15.5522 12 15.5522Z"
+                                                                              stroke="white" stroke-width="1.5"
+                                                                              stroke-linecap="round"
+                                                                              stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+                                                            <button class="close_btn" type="button">
+                                                                <svg width="32" height="33" viewBox="0 0 32 33"
+                                                                     fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M10.3431 10.8954L21.6568 22.2091"
+                                                                          stroke="white" stroke-width="1.5"
+                                                                          stroke-linecap="round"
+                                                                          stroke-linejoin="round"></path>
+                                                                    <path d="M10.3432 22.2091L21.6569 10.8954"
+                                                                          stroke="white" stroke-width="1.5"
+                                                                          stroke-linecap="round"
+                                                                          stroke-linejoin="round"></path>
+                                                                </svg>
+
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="clone_btns">
+                                                        <button class="add_btn" type="button">
+                                                            Əlavə et
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="inside_sub_box">
+                                                    <h4 class="">
+                                                        İstehsal planı
+                                                    </h4>
+                                                    <p>
+                                                        Hesablama və Xərc bölmələri seçmək üçün doldurulur (ya bu, ya da
+                                                        digəri).
+                                                    </p>
+                                                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                                        <li class="nav-item" role="presentation">
+                                                            <button class="nav-link active" id="home-tab"
+                                                                    data-bs-toggle="tab" data-bs-target="#home"
+                                                                    type="button" role="tab" aria-controls="home"
+                                                                    aria-selected="true">İstehsalat planı
+                                                            </button>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation">
+                                                            <button class="nav-link" id="profile-tab"
+                                                                    data-bs-toggle="tab" data-bs-target="#profile"
+                                                                    type="button" role="tab" aria-controls="profile"
+                                                                    aria-selected="false">Qiymətləndirmə
+                                                            </button>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation">
+                                                            <button class="nav-link" id="contact-tab"
+                                                                    data-bs-toggle="tab" data-bs-target="#contact"
+                                                                    type="button" role="tab" aria-controls="contact"
+                                                                    aria-selected="false">Xərc qiyməti
+                                                            </button>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="accordion_tabs">
+                                                        <div class="tab-content" id="myTabContent">
+                                                            <div class="tab-pane fade show active" id="home"
+                                                                 role="tabpanel"
+                                                                 aria-labelledby="home-tab">
+                                                                <div class="button_list_tabs">
+                                                                    <a href="#" class="disabled">Xammal</a>
+                                                                    <a href="#" class="disabled">Əmək haqqı</a>
+                                                                    <a href="#" class="disabled">Amortizasiya</a>
+                                                                    <a href="#" class="disabled">Digər xərclər</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="profile" role="tabpanel"
+                                                                 aria-labelledby="profile-tab">
+                                                                <div class="button_list_tabs">
+                                                                    <a href="#" class="disabled">Xammal</a>
+                                                                    <a href="#" class="disabled">Əmək haqqı</a>
+                                                                    <a href="#" class="disabled">Amortizasiya</a>
+                                                                    <a href="#" class="disabled">Digər xərclər</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="contact" role="tabpanel"
+                                                                 aria-labelledby="contact-tab">
+                                                                <div class="button_list_tabs">
+                                                                    <a href="#" class="disabled">Xammal</a>
+                                                                    <a href="#" class="disabled">Əmək haqqı</a>
+                                                                    <a href="#" class="disabled">Amortizasiya</a>
+                                                                    <a href="#" class="disabled">Digər xərclər</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="inside_sub_box pb-0">
+                                                    <h4 class="">
+                                                        Satış planı
+                                                    </h4>
+                                                    <ul class="nav nav-tabs" id="myTab1" role="tablist">
+                                                        <li class="nav-item" role="presentation">
+                                                            <button class="nav-link active" id="home-tab1"
+                                                                    data-bs-toggle="tab" data-bs-target="#home"
+                                                                    type="button" role="tab" aria-controls="home"
+                                                                    aria-selected="true">Satış həcmi
+                                                            </button>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation">
+                                                            <button class="nav-link" id="profile-tab1"
+                                                                    data-bs-toggle="tab" data-bs-target="#profile"
+                                                                    type="button" role="tab" aria-controls="profile"
+                                                                    aria-selected="false">Qiymətləndirmə
+                                                            </button>
+                                                        </li>
+                                                        <li class="nav-item" role="presentation">
+                                                            <button class="nav-link" id="contact-tab1"
+                                                                    data-bs-toggle="tab" data-bs-target="#contact"
+                                                                    type="button" role="tab" aria-controls="contact"
+                                                                    aria-selected="false">Çatdırılma və ödəniş şərtləri
+                                                            </button>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="accordion_tabs">
+                                                        <div class="tab-content" id="myTabContent1">
+                                                            <div class="tab-pane fade show active" id="home1"
+                                                                 role="tabpanel"
+                                                                 aria-labelledby="home-tab1">
+                                                                <div class="input_list_tab">
+                                                                    <div class="mini_box">
+                                                                        <span>
+                                                                            Mənfəət dərəcəsi
+                                                                        </span>
+                                                                        <input type="text" class="mini_input">
+                                                                        <span>%</span>
+                                                                    </div>
+                                                                    <div class="mini_box">
+                                                                        <span>
+                                                                            Aksiz vergiləri
+                                                                        </span>
+                                                                        <input type="text" class="mini_input">
+                                                                        <span>%</span>
+                                                                    </div>
+                                                                    <div class="mini_box">
+                                                                        <span>
+                                                                            ƏDV
+                                                                        </span>
+                                                                        <input type="text" class="mini_input">
+                                                                        <span>%</span>
+                                                                    </div>
+                                                                    <div class="mini_box">
+                                                                        <span>
+                                                                            Satış qiyməti
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="profile1" role="tabpanel"
+                                                                 aria-labelledby="profile-tab1">
+                                                                <div class="input_list_tab">
+                                                                    <div class="mini_box">
+                                                                        <span>
+                                                                            Mənfəət dərəcəsi
+                                                                        </span>
+                                                                        <input type="text" class="mini_input">
+                                                                        <span>%</span>
+                                                                    </div>
+                                                                    <div class="mini_box">
+                                                                        <span>
+                                                                            Aksiz vergiləri
+                                                                        </span>
+                                                                        <input type="text" class="mini_input">
+                                                                        <span>%</span>
+                                                                    </div>
+                                                                    <div class="mini_box">
+                                                                        <span>
+                                                                            ƏDV
+                                                                        </span>
+                                                                        <input type="text" class="mini_input">
+                                                                        <span>%</span>
+                                                                    </div>
+                                                                    <div class="mini_box">
+                                                                        <span>
+                                                                            Satış qiyməti
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="tab-pane fade" id="contact1" role="tabpanel"
+                                                                 aria-labelledby="contact-tab1">
+                                                                <div class="input_list_tab">
+                                                                    <div class="mini_box">
+                                                                        <span>
+                                                                            Mənfəət dərəcəsi
+                                                                        </span>
+                                                                        <input type="text" class="mini_input">
+                                                                        <span>%</span>
+                                                                    </div>
+                                                                    <div class="mini_box">
+                                                                        <span>
+                                                                            Aksiz vergiləri
+                                                                        </span>
+                                                                        <input type="text" class="mini_input">
+                                                                        <span>%</span>
+                                                                    </div>
+                                                                    <div class="mini_box">
+                                                                        <span>
+                                                                            ƏDV
+                                                                        </span>
+                                                                        <input type="text" class="mini_input">
+                                                                        <span>%</span>
+                                                                    </div>
+                                                                    <div class="mini_box">
+                                                                        <span>
+                                                                            Satış qiyməti
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="capital">
+                                        <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapse_capital"
+                                                aria-expanded="false" aria-controls="collapse_capital">
+                                            Nizamnamə kapitalı
+                                        </button>
+                                    </h2>
+                                    <div id="collapse_capital" class="accordion-collapse collapse"
+                                         aria-labelledby="capital" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="input_list_accordion">
+                                                <div class="cloned_inputs cloned_inputs_section1">
+                                                    <div class="clone_container">
+                                                        <div class="clone_box">
+                                                            <div class="single_box">
+                                                                <label>İştirakçı</label>
+                                                                <input type="text">
+                                                            </div>
+                                                            <div class="single_box">
+                                                                <label>Depozit tarixi</label>
+                                                                <input type="date">
+                                                            </div>
+                                                            <div class="single_box">
+                                                                <label>Məbləğ, azn.</label>
+                                                                <input type="text">
+                                                            </div>
+                                                            <div class="single_box">
+                                                                <label>Buraxılış tarixi</label>
+                                                                <input type="date">
+                                                            </div>
+                                                            <div class="single_box">
+                                                                <label>Seçimlər </label>
+                                                                <a href="#" class="setting_text_btn">
+                                                                    <svg width="24" height="25" viewBox="0 0 24 25"
+                                                                         fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M3 9.66223V15.4322C3 17.5522 3 17.5522 5 18.9022L10.5 22.0822C11.33 22.5622 12.68 22.5622 13.5 22.0822L19 18.9022C21 17.5522 21 17.5522 21 15.4422V9.66223C21 7.55223 21 7.55223 19 6.20223L13.5 3.02223C12.68 2.54223 11.33 2.54223 10.5 3.02223L5 6.20223C3 7.55223 3 7.55223 3 9.66223Z"
+                                                                              stroke="white" stroke-width="1.5"
+                                                                              stroke-linecap="round"
+                                                                              stroke-linejoin="round"></path>
+                                                                        <path d="M12 15.5522C13.6569 15.5522 15 14.2091 15 12.5522C15 10.8954 13.6569 9.55225 12 9.55225C10.3431 9.55225 9 10.8954 9 12.5522C9 14.2091 10.3431 15.5522 12 15.5522Z"
+                                                                              stroke="white" stroke-width="1.5"
+                                                                              stroke-linecap="round"
+                                                                              stroke-linejoin="round"></path>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+                                                            <button class="close_btn" type="button">
+                                                                <svg width="32" height="33" viewBox="0 0 32 33"
+                                                                     fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M10.3431 10.8954L21.6568 22.2091"
+                                                                          stroke="white" stroke-width="1.5"
+                                                                          stroke-linecap="round"
+                                                                          stroke-linejoin="round"></path>
+                                                                    <path d="M10.3432 22.2091L21.6569 10.8954"
+                                                                          stroke="white" stroke-width="1.5"
+                                                                          stroke-linecap="round"
+                                                                          stroke-linejoin="round"></path>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="clone_btns">
+                                                        <button class="add_btn" type="button">
+                                                            Əlavə et
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                            Kreditlər
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                         aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="input_list_accordion">
+                                                <p class="info_text mt-0 mb-32">
+                                                    Bir qayda olaraq, istehsala başlamazdan əvvəl borc vəsaitləri tələb
+                                                    olunur, ona görə də layihənin başlama tarixindən bir ay əvvəl tarix
+                                                    göstərilməlidir.
+                                                </p>
+                                                <div class="cloned_inputs cloned_inputs_section1">
+                                                    <div class="clone_container">
+                                                        <div class="clone_box">
+                                                            <div class="single_box">
+                                                                <label>Ad</label>
+                                                                <input type="text">
+                                                            </div>
+                                                            <div class="single_box">
+                                                                <label>Tarix</label>
+                                                                <input type="date">
+                                                            </div>
+                                                            <div class="single_box">
+                                                                <label>Məbləğ, azn.</label>
+                                                                <input type="text">
+                                                            </div>
+                                                            <div class="single_box">
+                                                                <label>Təklif, %</label>
+                                                                <input type="text">
+                                                            </div>
+                                                            <div class="single_box">
+                                                                <label>Müddət, aylar</label>
+                                                                <input type="text">
+                                                            </div>
+                                                            <div class="single_box">
+                                                                <label>Seçimlər </label>
+                                                                <a href="#" class="setting_text_btn">
+                                                                    <svg width="24" height="25" viewBox="0 0 24 25"
+                                                                         fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M3 9.66223V15.4322C3 17.5522 3 17.5522 5 18.9022L10.5 22.0822C11.33 22.5622 12.68 22.5622 13.5 22.0822L19 18.9022C21 17.5522 21 17.5522 21 15.4422V9.66223C21 7.55223 21 7.55223 19 6.20223L13.5 3.02223C12.68 2.54223 11.33 2.54223 10.5 3.02223L5 6.20223C3 7.55223 3 7.55223 3 9.66223Z"
+                                                                              stroke="white" stroke-width="1.5"
+                                                                              stroke-linecap="round"
+                                                                              stroke-linejoin="round"></path>
+                                                                        <path d="M12 15.5522C13.6569 15.5522 15 14.2091 15 12.5522C15 10.8954 13.6569 9.55225 12 9.55225C10.3431 9.55225 9 10.8954 9 12.5522C9 14.2091 10.3431 15.5522 12 15.5522Z"
+                                                                              stroke="white" stroke-width="1.5"
+                                                                              stroke-linecap="round"
+                                                                              stroke-linejoin="round"></path>
+                                                                    </svg>
+                                                                </a>
+                                                            </div>
+                                                            <button class="close_btn" type="button">
+                                                                <svg width="32" height="33" viewBox="0 0 32 33"
+                                                                     fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M10.3431 10.8954L21.6568 22.2091"
+                                                                          stroke="white" stroke-width="1.5"
+                                                                          stroke-linecap="round"
+                                                                          stroke-linejoin="round"></path>
+                                                                    <path d="M10.3432 22.2091L21.6569 10.8954"
+                                                                          stroke="white" stroke-width="1.5"
+                                                                          stroke-linecap="round"
+                                                                          stroke-linejoin="round"></path>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="clone_btns">
+                                                        <button class="add_btn" type="button">
+                                                            Əlavə et
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseThree">
+                                            Təqvim planı
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                         aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <div class="input_list_accordion">
+                                                <div class="flex_inputs my-32">
+                                                    <select name="">
+                                                        <option value="">Biznes qeydiyyatı üçün xərclər</option>
+                                                    </select>
+                                                    <button class="btn_dark_blue_accordion">
+                                                        Əlavə et
+                                                    </button>
+                                                    <button class="btn_yellow">
+                                                        Misal
+                                                    </button>
+                                                </div>
+                                                <div class="cloned_inputs cloned_inputs_section1">
+                                                    <div class="clone_container">
+                                                        <div class="clone_box">
+                                                            <div class="single_box">
+                                                                <label>Ad</label>
+                                                                <input type="text" placeholder="Biznesin qeydiyyatı üçün xərclər">
+                                                            </div>
+                                                            <div class="single_box">
+                                                                <label>Başlama tarixi	</label>
+                                                                <input type="date">
+                                                            </div>
+                                                            <div class="single_box">
+                                                                <label>Son istifadə tarixi	</label>
+                                                                <input type="date">
+                                                            </div>
+                                                            <div class="single_box">
+                                                                <label>Məbləğ, azn.	</label>
+                                                                <input type="text">
+                                                            </div>
+                                                            <button class="close_btn d-block" type="button">
+                                                                <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M10.3431 10.8954L21.6568 22.2091" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                    <path d="M10.3432 22.2091L21.6569 10.8954" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion_top mt-32 mb-0">
+                                                    <span>
+                                                        Diaqram hündürlüyü
+                                                    </span>
+                                                    <input type="text" value="1000">
+                                                    <button class="btn_dark_blue_accordion">
+                                                        Gantt diaqramı yaradın
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="button-group">
                                 <button type="button" class="prev-step">Əvvəli</button>
                                 <button type="button" class="next-step">Sonraki</button>
@@ -1026,12 +1560,12 @@
                     <div class="table_box">
                         <table>
                             <thead>
-                                <tr>
-                                    <th>№</th>
-                                    <th>Məhsulun (xidmətin) adı	</th>
-                                    <th>Baza dövründə satış həcmi V0 , min azn	</th>
-                                    <th>V1 dövründə satış həcmi , min azn</th>
-                                </tr>
+                            <tr>
+                                <th>№</th>
+                                <th>Məhsulun (xidmətin) adı</th>
+                                <th>Baza dövründə satış həcmi V0 , min azn</th>
+                                <th>V1 dövründə satış həcmi , min azn</th>
+                            </tr>
                             </thead>
                             <tbody>
                             <tr>
