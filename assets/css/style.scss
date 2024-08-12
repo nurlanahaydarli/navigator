@@ -1175,6 +1175,7 @@ footer {
           line-height: 20.8px;
           color: $text-dark-blue;
         }
+
         span {
           cursor: pointer;
 
@@ -2516,6 +2517,7 @@ footer {
     justify-content: center;
     align-items: center;
     width: 18px;
+    min-width: 18px;
     height: 18px;
     border: 1.5px solid $text-dark-blue;
     border-radius: 6px;
@@ -3482,9 +3484,11 @@ footer {
   justify-content: flex-start;
   gap: 8px;
   margin-bottom: 32px;
-  input{
+
+  input {
     max-width: 100px;
   }
+
   span {
     font-size: 16px;
     font-weight: 400;
@@ -3493,9 +3497,11 @@ footer {
 
   }
 }
-.mt-32{
+
+.mt-32 {
   margin-top: 32px;
- }
+}
+
 .accordion_text {
   font-size: 16px;
   font-weight: 500;
@@ -3555,7 +3561,8 @@ footer {
       font-weight: 500;
       line-height: 16px;
       color: #fff;
-      &.disabled{
+
+      &.disabled {
         background-color: rgba(65, 104, 141, 1);
         cursor: not-allowed;
         border-color: rgba(65, 104, 141, 1);;
@@ -3563,35 +3570,67 @@ footer {
     }
   }
 }
-.input_list_tab{
+
+.input_list_tab {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 32px;
-  .mini_box{
+
+  .mini_box {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 8px;
-    .mini_input{
+
+    label {
+      color: rgba(65, 104, 141, 1);
+      white-space: nowrap;
+    }
+
+    .mini_input {
       max-width: 50px;
     }
   }
-  span{
+
+  span {
     font-size: 16px;
     font-weight: 400;
     line-height: 16px;
     color: rgba(65, 104, 141, 1);
   }
 }
-.btn_yellow{
+
+.btn_yellow {
   font-size: 16px;
   font-weight: 500;
   line-height: 16px;
   color: #fff;
   padding: 14px 18px;
   border-radius: 4px;
-  border: 1px  solid rgba(174, 138, 41, 1);
+  border: 1px solid rgba(174, 138, 41, 1);
   background-color: rgba(174, 138, 41, 1);
 
+}
+
+.w-60 {
+  max-width: 60px;
+}
+.accordion_end{
+  .ghost_btn {
+    padding: 14px 18px;
+    border-radius: 4px;
+    border: 1px solid rgba(10, 34, 98, 1);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    color: rgba(10, 34, 98, 1);
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+
+    &:hover {
+      color: rgba(10, 34, 98, 1);
+    }
+  }
 }

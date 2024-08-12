@@ -2089,6 +2089,7 @@ footer .footer_bottom p {
   justify-content: center;
   align-items: center;
   width: 18px;
+  min-width: 18px;
   height: 18px;
   border: 1.5px solid #00284B;
   border-radius: 6px;
@@ -2988,6 +2989,10 @@ footer .footer_bottom p {
   justify-content: flex-start;
   gap: 8px;
 }
+.input_list_tab .mini_box label {
+  color: #41688d;
+  white-space: nowrap;
+}
 .input_list_tab .mini_box .mini_input {
   max-width: 50px;
 }
@@ -3007,6 +3012,26 @@ footer .footer_bottom p {
   border-radius: 4px;
   border: 1px solid #ae8a29;
   background-color: #ae8a29;
+}
+
+.w-60 {
+  max-width: 60px;
+}
+
+.accordion_end .ghost_btn {
+  padding: 14px 18px;
+  border-radius: 4px;
+  border: 1px solid #0a2262;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #0a2262;
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+}
+.accordion_end .ghost_btn:hover {
+  color: #0a2262;
 }
 
 /*# sourceMappingURL=style.css.map */
