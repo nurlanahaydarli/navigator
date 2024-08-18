@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <title>Biznes Navigator</title>
+</head>
+<body>
+
+
+<main class="main_bg">
+    <header>
+        <div class="container">
+            <div class="header_top">
+                <div class="header_nav">
+                    <a href="index.html" class="logo_box">
+                        <img src="assets/img/logo.svg" alt=""/>
+                    </a>
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                    aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page"
+                                           href="legislation.html">Qanunvericilik</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="about.html">Portal haqqında</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="education.html">Maarifləndirmə</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="services.html">Xidmətlər</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="header_auth">
+                    <div class="login_box">
+                        <a href="#">
+                            <img src="assets/img/auth_icon.svg" alt="">
+                            <span>Daxil ol</span>
+                        </a>
+                    </div>
+                    <div class="search_box">
+                        <a href="#">
+                            <img src="assets/img/search-normal.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="lang_box">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                <span>Az</span> <img src="assets/img/az.png" alt="">
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#"><span>Az</span> <img src="assets/img/az.png"
+                                                                                           alt=""></a></li>
+                                <li><a class="dropdown-item" href="#"><span>Az</span> <img src="assets/img/az.png"
+                                                                                           alt=""></a></li>
+                                <li><a class="dropdown-item" href="#"><span>Az</span> <img src="assets/img/az.png"
+                                                                                           alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section_padding">
+        <div class="container">
+            <div class="vacancy_title">
+                <h1>Yeni vakansiya paylaş</h1>
+            </div>
+            <form action="">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="vacancy_textarea_container">
+                            <div class="box_item_vacancy">
+                                <h4>Təsvir</h4>
+                                <textarea name="editor1" id="editor1"></textarea>
+                            </div>
+                            <div class="box_item_vacancy">
+                                <h4>Tələblər</h4>
+                                <textarea name="editor1" id="editor2"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="vacancy_textarea_container">
+                            <div class="box_item_vacancy">
+                                <h4>Şirkət haqqında</h4>
+                                <div class="input_list_tab">
+                                    <div class="mini_box">
+                                        <span>Şirkət adı</span>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="input_list_tab">
+                                    <div class="mini_box">
+                                        <span>Şirkət loqosu</span>
+                                        <input type="file" class="file_input" id="logo">
+                                        <label for="logo" class="file_label">Sadəcə PNG və ya JPG fayl</label>
+                                    </div>
+                                </div>
+                                <div class="input_list_tab">
+                                    <div class="mini_box">
+                                        <span>Vakansiya növü</span>
+                                        <select name="" id="">
+                                            <option value="">
+                                                Tam ştat
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="input_list_tab">
+                                    <div class="mini_box">
+                                        <span>Kateqoriya</span>
+                                        <select name="" id="">
+                                            <option value="">
+                                                Maliyyə, Biznes və idarəetmə
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box_item_vacancy">
+                                <h4>Vakansiya haqqında</h4>
+                                <div class="input_list_tab">
+                                    <div class="mini_box">
+                                        <span>Vakansiyanın başlığı</span>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="input_list_tab">
+                                    <div class="mini_box">
+                                        <span>Vakansiya növü</span>
+                                        <select name="" id="">
+                                            <option value="">
+                                                Tam ştat
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="input_list_tab">
+                                    <div class="mini_box">
+                                        <span>Kateqoriya</span>
+                                        <select name="" id="">
+                                            <option value="">
+                                                Maliyyə, Biznes və idarəetmə
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button_box">
+                                <button>
+                                    Təsdiqlə
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="container">
+        <div class="footer_box">
+            <div class="footer_left">
+                <img src="assets/img/footer_logo.svg" alt="">
+                <ul class="footer_links">
+                    <li>
+                        <a href="#">Qanunvericilik</a>
+                    </li>
+                    <li>
+                        <a href="#">Portal haqqında</a>
+                    </li>
+                    <li>
+                        <a href="#">Xidmətlər</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_right">
+                <ul>
+                    <li><a href="#"><img src="assets/img/fb.svg" alt=""></a></li>
+                    <li><a href="#"><img src="assets/img/insta.svg" alt=""></a></li>
+                    <li><a href="#"><img src="assets/img/x.svg" alt=""></a></li>
+                    <li><a href="#"><img src="assets/img/youtube.svg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <p>© Kiçik və Orta Biznesin İnkişafı Agentliyi </p>
+        </div>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
+
+<script>
+    $(document).ready(function() {
+        if (CKEDITOR.instances.editor1) {
+            CKEDITOR.instances.editor1.destroy(true);  // Destroys any existing instance first
+        }
+        if (CKEDITOR.instances.editor2) {
+            CKEDITOR.instances.editor2.destroy(true);  // Destroys any existing instance first
+        }
+        CKEDITOR.replace('editor1');
+        CKEDITOR.replace('editor2');
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

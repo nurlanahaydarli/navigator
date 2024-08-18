@@ -3034,4 +3034,170 @@ footer .footer_bottom p {
   color: #0a2262;
 }
 
+.vacancy_title {
+  margin-bottom: 48px;
+}
+.vacancy_title h1 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #1a1a1a;
+}
+
+.vacancy_textarea_container .box_item_vacancy {
+  position: relative;
+  padding: 24px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.5);
+  margin-bottom: 24px;
+}
+.vacancy_textarea_container .box_item_vacancy h4 {
+  margin-bottom: 24px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 12px 0;
+  color: #1e1e1e;
+}
+.vacancy_textarea_container .box_item_vacancy .detail_text p, .vacancy_textarea_container .box_item_vacancy .detail_text li {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  color: #0a2262;
+}
+.vacancy_textarea_container .box_item_vacancy .input_list_tab {
+  margin-bottom: 16px;
+  width: 100%;
+}
+.vacancy_textarea_container .box_item_vacancy .input_list_tab .mini_box {
+  width: 100%;
+}
+.vacancy_textarea_container .box_item_vacancy .input_list_tab span {
+  padding: 8px;
+  white-space: nowrap;
+}
+.vacancy_textarea_container .box_item_vacancy .input_list_tab input {
+  width: 100%;
+  padding: 14px 36px;
+  border: 1px solid rgba(10, 34, 98, 0.25);
+  background-color: transparent;
+  border-radius: 4px;
+}
+.vacancy_textarea_container .box_item_vacancy .input_list_tab select {
+  background-color: transparent;
+  border: 1px solid rgba(10, 34, 98, 0.25);
+  padding: 12px 50px 12px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #0a2262;
+  font-weight: 400;
+  line-height: 16px;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("../img/arrow-down-d.svg") no-repeat right 10px center;
+}
+.vacancy_textarea_container .vacancy_detail_list a {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vacancy_textarea_container .vacancy_detail_list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.vacancy_textarea_container .vacancy_detail_list ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+}
+.vacancy_textarea_container .vacancy_detail_list ul li span {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #41688d;
+}
+.vacancy_textarea_container .vacancy_detail_list ul li p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20.8px;
+  color: #00284b;
+}
+.vacancy_textarea_container .button_box {
+  display: flex;
+  justify-content: flex-end;
+}
+.vacancy_textarea_container .button_box button {
+  padding: 14px 20px;
+  background-color: #0a2262;
+  border: 1px solid #0a2262;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #fff;
+  max-width: 150px;
+  width: 100%;
+}
+
+.modal_btn_box {
+  margin-bottom: 12px;
+}
+.modal_btn_box button {
+  border-radius: 6px;
+  height: 60px;
+  width: 100%;
+}
+
+.file_input {
+  display: none;
+}
+
+.file_label {
+  padding: 14px 36px;
+  border: 1px solid rgba(10, 34, 98, 0.25);
+  background-color: transparent;
+  text-align: center;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 16px;
+  color: rgba(65, 104, 141, 0.5);
+  cursor: pointer;
+}
+
+.cv_box .box_cv {
+  display: flex;
+  margin-bottom: 24px;
+  align-items: center;
+}
+.cv_box .box_cv label {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #41688d;
+  padding: 14px 8px;
+  white-space: nowrap;
+  margin-right: 8px;
+}
+.cv_box .box_cv input {
+  width: 100%;
+  padding: 14px 36px;
+  border: 1px solid rgba(10, 34, 98, 0.25);
+  background-color: transparent;
+  border-radius: 4px;
+}
+
 /*# sourceMappingURL=style.css.map */
