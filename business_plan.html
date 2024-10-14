@@ -525,17 +525,17 @@
                                                             <label>Miqdar</label>
                                                             <div>
                                                                 <input type="text" value="1">
-                                                                <span class="setting_text">
+                                                                <a href="#" class="setting_text" data-bs-toggle="modal" data-bs-target="#exampleModal-edv" type="button">
                                                                     ƏDV
-                                                                </span>
-                                                                <span class="setting_text">
+                                                                </a>
+                                                                <a href="#" class="setting_text" data-bs-toggle="modal" data-bs-target="#exampleModal-x" type="button">
                                                                     <svg width="11" height="13" viewBox="0 0 11 13"
                                                                          fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                         <path d="M0.375 12.5522V11.0409H2.72159V10.95C1.99811 10.4841 1.42614 9.86664 1.00568 9.0977C0.585227 8.32876 0.375 7.41588 0.375 6.35906C0.375 5.53709 0.503788 4.7852 0.761364 4.10338C1.01894 3.41778 1.38258 2.82687 1.85227 2.33066C2.32197 1.83066 2.87689 1.44429 3.51705 1.17156C4.16098 0.895049 4.86742 0.756791 5.63636 0.756791C6.4053 0.756791 7.10985 0.895049 7.75 1.17156C8.39394 1.44429 8.95076 1.83066 9.42045 2.33066C9.89015 2.82687 10.2538 3.41778 10.5114 4.10338C10.7689 4.7852 10.8977 5.53709 10.8977 6.35906C10.8977 7.41588 10.6875 8.32876 10.267 9.0977C9.84659 9.86664 9.27462 10.4841 8.55114 10.95V11.0409H10.8977V12.5522H6.60227V10.6432C7.07197 10.4462 7.5 10.145 7.88636 9.73975C8.27273 9.33066 8.58144 8.84391 8.8125 8.27952C9.04356 7.71134 9.15909 7.09202 9.15909 6.42156C9.15909 5.6602 9.00947 4.97459 8.71023 4.36475C8.41099 3.75111 7.99621 3.26437 7.46591 2.90452C6.93561 2.54467 6.32576 2.36475 5.63636 2.36475C5.125 2.36475 4.65341 2.46891 4.22159 2.67725C3.78977 2.88179 3.41667 3.16778 3.10227 3.5352C2.78788 3.90262 2.54356 4.33255 2.36932 4.82497C2.19886 5.31361 2.11364 5.84581 2.11364 6.42156C2.11364 7.09202 2.22917 7.71134 2.46023 8.27952C2.69129 8.84391 3 9.33066 3.38636 9.73975C3.77273 10.145 4.20076 10.4462 4.67045 10.6432V12.5522H0.375Z"
                                                                               fill="white"/>
                                                                     </svg>
 
-                                                                </span>
+                                                                </a>
                                                             </div>
                                                         </div>
                                                         <div class="single_box">
@@ -630,9 +630,9 @@
                                                             <label>Qiymət, azn.</label>
                                                             <div>
                                                                 <input type="text" value="1">
-                                                                <span class="setting_text">
+                                                                <a href="#" class="setting_text" data-bs-toggle="modal" data-bs-target="#exampleModal-edv" type="button">
                                                                     ƏDV
-                                                                </span>
+                                                                </a>
                                                             </div>
                                                         </div>
                                                         <div class="single_box">
@@ -1001,10 +1001,10 @@
                                                                 <label>Aylıq məbləğ, azn. </label>
                                                                 <div class="inside_flex">
                                                                     <input type="text" value="10000">
-                                                                    <span class="setting_text">
+                                                                    <a href="#" class="setting_text" data-bs-toggle="modal" data-bs-target="#exampleModal-edv" type="button">
                                                                         ƏDV
-                                                                    </span>
-                                                                    <a href="#" class="setting_text_btn">
+                                                                    </a>
+                                                                        <a href="#" class="setting_text_btn" data-bs-toggle="modal" data-bs-target="#exampleModal-x" type="button">
                                                                         <svg width="11" height="13" viewBox="0 0 11 13"
                                                                              fill="none"
                                                                              xmlns="http://www.w3.org/2000/svg">
@@ -2289,6 +2289,73 @@
     </div>
 </div>
 
+<!-- Modal -->
+<div class="modal fade modal_custom" id="exampleModal-edv" tabindex="-1" aria-labelledby="exampleModalLabel-edv" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel-edv">ƏDV</h5>
+            </div>
+            <div class="modal-body">
+                <div class="modal_content">
+                    <h3 class="">
+                        Biznes plan nümunələri
+                    </h3>
+                    <div class="modal_inputs">
+                        <div class="text_check">
+                            <input type="checkbox" id="include_edv"
+                                   class="check_plan balance_report_input">
+                            <label for="include_edv" class="check_label"></label>
+                            <label for="include_edv" class="text_label">ƏDV daxil, %</label>
+                        </div>
+                        <input type="text" placeholder="0">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn_dark_blue me-2">Yadda saxla</button>
+                <button type="button" class="btn btn_dark_ghost">Ləğv et</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade modal_custom" id="exampleModal-x" tabindex="-1" aria-labelledby="exampleModalLabel-x" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel-x">Avadanlıqların daşınması və quraşdırılması xərcləri</h5>
+            </div>
+            <div class="modal-body">
+                <div class="modal_content">
+                    <div class="modal_inputs">
+                        <input type="text" placeholder="0">
+                        <span>azn</span>
+                        <div class="text_check">
+                            <input type="checkbox" id="include_x"
+                                   class="check_plan balance_report_input">
+                            <label for="include_x" class="check_label"></label>
+                            <label for="include_x" class="text_label">ƏDV daxil, %</label>
+                        </div>
+                        <input type="text" placeholder="0">
+                        <span>%</span>
+                    </div>
+                    <p>və ya </p>
+
+                    <div class="modal_inputs">
+                        <input type="text" placeholder="0">
+                        <span>dəyərinin %</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn_dark_blue me-2">Yadda saxla</button>
+                <button type="button" class="btn btn_dark_ghost">Ləğv et</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 

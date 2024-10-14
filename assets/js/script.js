@@ -1,4 +1,10 @@
+document.querySelector('.open_laws_btn')?.addEventListener('click', function () {
+    document.querySelector('.law_category_list').classList.toggle('hide');
+});
 
+document.querySelector('.hide_category')?.addEventListener('click', function () {
+    document.querySelector('.law_category_list').classList.add('hide');
+});
 
 document.querySelectorAll('.add_btn').forEach(function (button) {
     button.addEventListener('click', function () {

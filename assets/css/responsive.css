@@ -1,0 +1,356 @@
+.open_laws_btn{
+    display: none!important;
+}
+.law_category_list.hide{
+    display: block!important;
+}
+.mobile_title{
+    display: none;
+}
+.label_list .label_box img{
+    width: 20px;
+    height: 20px;
+}
+.category_list ul .category_accordion .accordion_top{
+    margin-bottom: 0!important;
+}
+.modal_inputs {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+}
+.modal_inputs input{
+    height: 44px;
+    border: 1px solid rgba(10, 34, 98, 0.25);
+    width: 80px;
+    border-radius: 4px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    color: rgba(10, 34, 98, 1);
+    text-align: center;
+}
+.modal_inputs input::placeholder{
+    color: rgba(10, 34, 98, 1);
+}
+.btn_dark_ghost{
+    border-radius: 4px;
+    padding: 14px 18px;
+    border: 1px solid rgba(10, 34, 98, 1) !important;
+    color: rgba(10, 34, 98, 1) !important;
+    background-color: transparent!important;
+}
+.modal_inputs span{
+    padding: 14px 8px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    color: rgba(65, 104, 141, 1);
+}
+.modal_inputs .text_check .text_label{
+    color:  rgba(65, 104, 141, 1);
+}
+.modal_custom .modal-footer{
+    gap: 8px!important;
+}
+@media (max-width: 991px) {
+    .modal_custom .modal-footer{
+        gap: 8px;
+    }
+    footer {
+        padding: 48px 32px;
+    }
+
+    footer .footer_box .footer_left {
+        flex-direction: column;
+    }
+
+    footer .footer_box .footer_left img {
+        width: 96px;
+        height: 120px;
+    }
+
+    footer .footer_box .footer_left .footer_links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    footer .footer_bottom {
+        margin-top: 96px;
+    }
+
+    footer .footer_bottom p {
+        text-align: center;
+    }
+
+    footer .footer_box .footer_right ul {
+        flex-direction: column;
+    }
+
+    footer .footer_box .footer_right ul a {
+        width: 48px;
+        height: 48px;
+    }
+
+    .document_box .img_box {
+        width: 60px;
+        height: 60px;
+    }
+
+    .document_box .img_box img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .document_box .box_content p {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18.2px;
+    }
+
+    .document_box .box_content h4 {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20.8px;
+        text-align: left;
+    }
+    .section_padding .section_img{
+        display: none;
+    }
+    .section_title_big{
+        font-size: 37px;
+        font-weight: 900;
+        line-height: 40px;
+    }
+    .section_text{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18.2px;
+    }
+    .section_padding{
+        padding: 24px 12px;
+    }
+    .header_top .header_auth{
+        display: none;
+    }
+    .header_top .header_nav{
+        justify-content: space-between;
+    }
+    .header_top{
+        display: block;
+    }
+    .header_top .header_nav .logo_box ,
+    .header_top .header_nav .logo_box  img{
+        width: 96px;
+        height: 120px;
+    }
+    .law_category_list{
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        /*display: none;*/
+    }
+    .law_category_list.hide{
+        display: none!important;
+    }
+    .open_laws_btn{
+        display: block!important;
+    }
+    .mobile_title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+    .mobile_title h4{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: left;
+        color: rgba(155, 130, 62, 1);
+    }
+    .mobile_title button{
+        width: 44px;
+        height: 44px;
+        background-color: transparent;
+        padding: 10px;
+        border-radius: 4px;
+        border: 1px solid rgba(174, 138, 41, 0.15);
+    }
+    .label_list .label_box{
+        padding: 12px 20px;
+    }
+    .service_box{
+        height: auto;
+    }
+    .pagination_list ul{
+        justify-content: center!important;
+    }
+    .section_title_medium{
+        font-size: 32px;
+        line-height: 41.6px;
+    }
+    .video_detail_box .img_box img{
+        height: auto;
+    }
+    .video_detail_box .text_box .detail_bottom{
+        flex-wrap: wrap;
+    }
+    .column_reverse_mobile{
+        flex-direction: column-reverse;
+    }
+    .episode_list{
+        margin-bottom: 48px;
+    }
+    .input_box{
+        border-bottom: 0;
+    }
+    .filter_header .filter_flex{
+        gap: 12px;
+    }
+    .filter_header .filter_flex .input_box{
+        padding: 0!important;
+    }
+    .filter_header .filter_flex .input_box{
+        justify-content: space-between;
+    }
+    .with_check{
+        justify-content: flex-start!important;
+    }
+    .filter_buttons{
+        flex-direction: column-reverse;
+    }
+    .filter_buttons button{
+        width: 100%;
+    }
+    .filter_header{
+        margin-bottom: 48px;
+    }
+    .detail_top_box{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .detail_top_box .left_side ul{
+        flex-wrap: wrap;
+    }
+    .detail_top_box .right_side{
+        margin-bottom: 24px;
+    }
+    .detail_top_box .left_side{
+        margin-bottom: 24px;
+        padding: 0;
+    }
+    .detail_body h1{
+        line-height: 42px;
+    }
+    .gallery_box{
+        margin-bottom: 24px;
+    }
+    .detail_nav .nav-link{
+        max-width: 100%;
+    }
+    .detail_box.box_nav_tabs .nav_tabs_top{
+        flex-wrap: wrap;
+    }
+    #mainImage{
+        height: 530px;
+        object-fit: cover;
+    }
+    .training_container .training_item .date_box{
+        /*margin-bottom: 24px;*/
+    }
+    .training_container .training_item .training_list li .left_box{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .training_container .training_item .training_list li .right_box{
+        min-width: 44px;
+    }
+    .training_container .training_item .training_list{
+        margin-top: 24px;
+    }
+    .training_detail_text{
+        gap: 24px;
+    }
+    .training_detail_text .detail_item{
+        width: auto!important;
+    }
+    .training_detail_img img{
+        height: 348px;
+    }
+    .vacancy_search{
+        flex-direction: column;
+        margin: 16px 12px;
+        padding: 16px 24px;
+    }
+    .vacancy_search .input_box{
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        max-width: 100%;
+    }
+    .vacancy_search .btn_box{
+        justify-content: flex-end;
+    }
+    .vacancy_search .search_item ~ div{
+        width: 100%;
+    }
+    .box_cv{
+        flex-wrap: wrap;
+    }
+
+    .modal.show .modal-dialog{
+        margin: 0!important;
+    }
+    .vacancy_textarea_container .box_item_vacancy .input_list_tab .mini_box{
+        flex-wrap: wrap;
+    }
+    .vacancy_textarea_container .box_item_vacancy .input_list_tab span{
+         padding: 8px 0;
+    }
+    .category_list ul .category_accordion .accordion_top{
+        gap: 8px;
+    }
+    .document_category_detail_top,
+    .document_category_detail_top .left_side{
+        flex-direction: column;
+    }
+    .document_category_detail_top .left_side ul{
+        flex-wrap: wrap;
+    }
+    .document_category_detail_top .left_side{
+        align-items: flex-start;
+    }
+    .document_category_detail_top .right_side{
+        flex-direction: column;
+        margin-top: 24px;
+        width: 100%;
+    }
+    .document_category_detail_top .right_side button{
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    .nav-tabs{
+        gap: 12px;
+    }
+    .form_step_list ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    .form_step_list ul li{
+        width: 100%;
+        max-width: 100%;
+    }
+    .button_list{
+        flex-direction: column;
+
+    }
+}
+@media(max-width: 375px){
+    .detail_box ul li{
+        flex-direction: column;
+    }
+}
