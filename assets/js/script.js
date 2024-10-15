@@ -1,3 +1,23 @@
+function handleResize() {
+    if (window.innerWidth > 991) {
+        document.querySelector('.nav_mobile').classList.add('hide');
+    } else {
+        document.querySelector('.nav_mobile').classList.add('hide');
+    }
+}
+handleResize();
+
+window.addEventListener('resize', handleResize);
+
+document.querySelector('.hide_nav')?.addEventListener('click', function () {
+    document.querySelector('.nav_mobile').classList.add('hide');
+});
+document.querySelector('.open_mobile_nav')?.addEventListener('click', function () {
+    document.querySelector('.nav_mobile').classList.remove('hide');
+});
+
+
+
 document.querySelector('.open_laws_btn')?.addEventListener('click', function () {
     document.querySelector('.law_category_list').classList.toggle('hide');
 });
@@ -8,25 +28,15 @@ document.querySelector('.hide_category')?.addEventListener('click', function () 
 
 document.querySelectorAll('.add_btn').forEach(function (button) {
     button.addEventListener('click', function () {
-        // Find the closest #clone_container within the same section as the clicked button
         var container = this.closest('.cloned_inputs').querySelector('.clone_container');
-
-        // Find the first .clone_box to clone
         var boxToClone = container.querySelector('.clone_box');
-
-        // Clone the .clone_box element
         var clone = boxToClone.cloneNode(true);
-
-        // Clear input fields in the cloned box
         var inputs = clone.querySelectorAll('input');
         inputs.forEach(input => input.value = '');
-
-        // Append the cloned box to the container
         container.appendChild(clone);
     });
 });
 
-// Event delegation to handle the close button
 document.addEventListener('click', function (e) {
     if (e.target.closest('.close_btn')) {
         e.target.closest('.clone_box').remove();

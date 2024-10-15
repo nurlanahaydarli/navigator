@@ -1,26 +1,32 @@
-.open_laws_btn{
-    display: none!important;
+.open_laws_btn {
+    display: none !important;
 }
-.law_category_list.hide{
-    display: block!important;
+
+.law_category_list.hide {
+    display: block !important;
 }
-.mobile_title{
+
+.mobile_title {
     display: none;
 }
-.label_list .label_box img{
+
+.label_list .label_box img {
     width: 20px;
     height: 20px;
 }
-.category_list ul .category_accordion .accordion_top{
-    margin-bottom: 0!important;
+
+.category_list ul .category_accordion .accordion_top {
+    margin-bottom: 0 !important;
 }
+
 .modal_inputs {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 8px;
 }
-.modal_inputs input{
+
+.modal_inputs input {
     height: 44px;
     border: 1px solid rgba(10, 34, 98, 0.25);
     width: 80px;
@@ -32,37 +38,200 @@
     color: rgba(10, 34, 98, 1);
     text-align: center;
 }
-.modal_inputs input::placeholder{
+
+.modal_inputs input::placeholder {
     color: rgba(10, 34, 98, 1);
 }
-.btn_dark_ghost{
+
+.btn_dark_ghost {
     border-radius: 4px;
     padding: 14px 18px;
     border: 1px solid rgba(10, 34, 98, 1) !important;
     color: rgba(10, 34, 98, 1) !important;
-    background-color: transparent!important;
+    background-color: transparent !important;
 }
-.modal_inputs span{
+
+.modal_inputs span {
     padding: 14px 8px;
     font-size: 16px;
     font-weight: 400;
     line-height: 16px;
     color: rgba(65, 104, 141, 1);
 }
-.modal_inputs .text_check .text_label{
-    color:  rgba(65, 104, 141, 1);
+
+.modal_inputs .text_check .text_label {
+    color: rgba(65, 104, 141, 1);
 }
-.modal_custom .modal-footer{
-    gap: 8px!important;
+
+.modal_custom .modal-footer {
+    gap: 8px !important;
+}
+
+.table_box,
+.balance_table {
+    overflow: auto;
+}
+
+.table_box table,
+.balance_table table {
+    min-width: 650px;
+}
+
+.business_plan_table_bottom .top_box {
+    flex-wrap: wrap;
+}
+
+.download_business_plan button span {
+    text-align: left;
+}
+.accordion_top{
+    flex-wrap: wrap;
+}
+.cloned_inputs .clone_box .single_box label ~ div{
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+.nav_mobile{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    background-color: #fff;
+    z-index: 3;
+}
+.nav_mobile .nav_top{
+    padding: 10px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_mobile .nav_top h4{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: rgba(155, 130, 62, 1);
+}
+.nav_mobile .nav_top button,
+.open_mobile_nav{
+    width: 44px;
+    height: 44px;
+    border-radius: 4px;
+    padding: 10px;
+    border: 1px solid rgba(174, 138, 41, 0.15);
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+.nav_mobile .nav_top button{
+    display: flex;
+}
+.open_mobile_nav{
+    display: none;
+}
+.nav_mobile .nav_box{
+    padding: 16px;
+}
+.nav_mobile .nav_box .nav_list_mobile{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+.nav_mobile .nav_box .nav_list_mobile li a{
+    border-radius: 4px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    color: rgba(26, 26, 26, 1);
+    display: block;
+}
+.nav_mobile .nav_box .nav_list_mobile li a:hover,
+.nav_mobile .nav_box .nav_list_mobile li a.active{
+    background-color: rgba(155, 130, 62, 0.15);
+}
+.nav_mobile .nav_box .search_box{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(136, 136, 136, 0.15);
+    padding: 12px;
+    border-radius: 4px;
+}
+.nav_mobile .nav_box .search_box input{
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    color: rgba(177, 177, 177, 1);
+}
+.nav_mobile .nav_box .search_box input::placeholder{
+    color: rgba(177, 177, 177, 1);
+}
+.nav_mobile .nav_box .search_box svg{
+    width: 20px;
+    height: 20px;
+}
+.nav_mobile .lang_box{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 32px;
+}
+.nav_mobile .dropdown button{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    color: rgba(155, 130, 62, 1);
+    gap: 8px;
+
+}
+.nav_mobile .dropdown button:after{
+    display: none;
 }
 @media (max-width: 991px) {
-    .modal_custom .modal-footer{
+    .open_mobile_nav{
+        display: flex;
+    }
+    .header_top .navbar{
+        display: none;
+    }
+    .modal_custom .modal-footer {
         gap: 8px;
+    }
+
+    .cloned_inputs .clone_box,
+    .cloned_inputs{
+        flex-wrap: wrap;
     }
     footer {
         padding: 48px 32px;
     }
-
+    .inside_sub_box .nav-tabs .nav-link{
+        margin: 12px 0;
+    }
+    .input_list_tab,
+    .flex_inputs,
+    .input_list_tab .mini_box{
+        flex-wrap: wrap;
+    }
+    .input_list_tab .mini_box label{
+        white-space: unset;
+    }
+    .inside_sub_box .button_list_tabs{
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+    .cloned_inputs .clone_box .single_box label ~ div{
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
     footer .footer_box .footer_left {
         flex-direction: column;
     }
@@ -75,6 +244,10 @@
     footer .footer_box .footer_left .footer_links {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    .balance_table button {
+        margin-top: 12px;
     }
 
     footer .footer_bottom {
@@ -116,63 +289,77 @@
         line-height: 20.8px;
         text-align: left;
     }
-    .section_padding .section_img{
+
+    .section_padding .section_img {
         display: none;
     }
-    .section_title_big{
+
+    .section_title_big {
         font-size: 37px;
         font-weight: 900;
         line-height: 40px;
     }
-    .section_text{
+
+    .section_text {
         font-size: 14px;
         font-weight: 400;
         line-height: 18.2px;
     }
-    .section_padding{
+
+    .section_padding {
         padding: 24px 12px;
     }
-    .header_top .header_auth{
+
+    .header_top .header_auth {
         display: none;
     }
-    .header_top .header_nav{
+
+    .header_top .header_nav {
         justify-content: space-between;
     }
-    .header_top{
+
+    .header_top {
         display: block;
     }
-    .header_top .header_nav .logo_box ,
-    .header_top .header_nav .logo_box  img{
+
+    .header_top .header_nav .logo_box,
+    .header_top .header_nav .logo_box img {
         width: 96px;
         height: 120px;
     }
-    .law_category_list{
+
+    .law_category_list {
         background-color: #fff;
         position: fixed;
         top: 0;
         left: 0;
         /*display: none;*/
     }
-    .law_category_list.hide{
-        display: none!important;
+
+    .law_category_list.hide {
+        display: none !important;
     }
-    .open_laws_btn{
-        display: block!important;
+
+    .open_laws_btn {
+        display: block !important;
     }
-    .mobile_title{
+
+    .mobile_title {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 16px;
     }
-    .mobile_title h4{
+
+    .mobile_title h4 {
         font-size: 20px;
         font-weight: 500;
         line-height: 20px;
         text-align: left;
         color: rgba(155, 130, 62, 1);
     }
-    .mobile_title button{
+
+    .mobile_title button {
         width: 44px;
         height: 44px;
         background-color: transparent;
@@ -180,177 +367,264 @@
         border-radius: 4px;
         border: 1px solid rgba(174, 138, 41, 0.15);
     }
-    .label_list .label_box{
+
+    .label_list .label_box {
         padding: 12px 20px;
     }
-    .service_box{
+
+    .service_box {
         height: auto;
     }
-    .pagination_list ul{
-        justify-content: center!important;
+
+    .pagination_list ul {
+        justify-content: center !important;
     }
-    .section_title_medium{
+
+    .section_title_medium {
         font-size: 32px;
         line-height: 41.6px;
     }
-    .video_detail_box .img_box img{
+
+    .video_detail_box .img_box img {
         height: auto;
     }
-    .video_detail_box .text_box .detail_bottom{
+
+    .video_detail_box .text_box .detail_bottom {
         flex-wrap: wrap;
     }
-    .column_reverse_mobile{
+
+    .column_reverse_mobile {
         flex-direction: column-reverse;
     }
-    .episode_list{
+
+    .episode_list {
         margin-bottom: 48px;
     }
-    .input_box{
+
+    .input_box {
         border-bottom: 0;
     }
-    .filter_header .filter_flex{
+
+    .filter_header .filter_flex {
         gap: 12px;
     }
-    .filter_header .filter_flex .input_box{
-        padding: 0!important;
+
+    .filter_header .filter_flex .input_box {
+        padding: 0 !important;
     }
-    .filter_header .filter_flex .input_box{
+
+    .filter_header .filter_flex .input_box {
         justify-content: space-between;
     }
-    .with_check{
-        justify-content: flex-start!important;
+
+    .with_check {
+        justify-content: flex-start !important;
     }
-    .filter_buttons{
+
+    .filter_buttons {
         flex-direction: column-reverse;
     }
-    .filter_buttons button{
+
+    .filter_buttons button {
         width: 100%;
     }
-    .filter_header{
+
+    .filter_header {
         margin-bottom: 48px;
     }
-    .detail_top_box{
+
+    .detail_top_box {
         flex-direction: column;
         align-items: flex-start;
     }
-    .detail_top_box .left_side ul{
+
+    .detail_top_box .left_side ul {
         flex-wrap: wrap;
     }
-    .detail_top_box .right_side{
+
+    .detail_top_box .right_side {
         margin-bottom: 24px;
     }
-    .detail_top_box .left_side{
+
+    .detail_top_box .left_side {
         margin-bottom: 24px;
         padding: 0;
     }
-    .detail_body h1{
+
+    .detail_body h1 {
         line-height: 42px;
     }
-    .gallery_box{
+
+    .gallery_box {
         margin-bottom: 24px;
     }
-    .detail_nav .nav-link{
+
+    .detail_nav .nav-link {
         max-width: 100%;
     }
-    .detail_box.box_nav_tabs .nav_tabs_top{
+
+    .detail_box.box_nav_tabs .nav_tabs_top {
         flex-wrap: wrap;
     }
-    #mainImage{
+
+    #mainImage {
         height: 530px;
         object-fit: cover;
     }
-    .training_container .training_item .date_box{
+
+    .training_container .training_item .date_box {
         /*margin-bottom: 24px;*/
     }
-    .training_container .training_item .training_list li .left_box{
+
+    .training_container .training_item .training_list li .left_box {
         flex-direction: column;
         align-items: flex-start;
     }
-    .training_container .training_item .training_list li .right_box{
+
+    .training_container .training_item .training_list li .right_box {
         min-width: 44px;
     }
-    .training_container .training_item .training_list{
+
+    .training_container .training_item .training_list {
         margin-top: 24px;
     }
-    .training_detail_text{
+
+    .training_detail_text {
         gap: 24px;
     }
-    .training_detail_text .detail_item{
-        width: auto!important;
+
+    .training_detail_text .detail_item {
+        width: auto !important;
     }
-    .training_detail_img img{
+
+    .training_detail_img img {
         height: 348px;
     }
-    .vacancy_search{
+
+    .vacancy_search {
         flex-direction: column;
         margin: 16px 12px;
         padding: 16px 24px;
     }
-    .vacancy_search .input_box{
+
+    .vacancy_search .input_box {
         width: 100%;
         border-bottom: 1px solid rgba(255, 255, 255, 0.5);
         max-width: 100%;
     }
-    .vacancy_search .btn_box{
+
+    .vacancy_search .btn_box {
         justify-content: flex-end;
     }
-    .vacancy_search .search_item ~ div{
+
+    .vacancy_search .search_item ~ div {
         width: 100%;
     }
-    .box_cv{
+
+    .box_cv {
         flex-wrap: wrap;
     }
 
-    .modal.show .modal-dialog{
-        margin: 0!important;
+    .modal.show .modal-dialog {
+        margin: 0 !important;
     }
-    .vacancy_textarea_container .box_item_vacancy .input_list_tab .mini_box{
+
+    .vacancy_textarea_container .box_item_vacancy .input_list_tab .mini_box {
         flex-wrap: wrap;
     }
-    .vacancy_textarea_container .box_item_vacancy .input_list_tab span{
-         padding: 8px 0;
+
+    .vacancy_textarea_container .box_item_vacancy .input_list_tab span {
+        padding: 8px 0;
     }
-    .category_list ul .category_accordion .accordion_top{
+
+    .category_list ul .category_accordion .accordion_top {
         gap: 8px;
     }
+
     .document_category_detail_top,
-    .document_category_detail_top .left_side{
+    .document_category_detail_top .left_side {
         flex-direction: column;
     }
-    .document_category_detail_top .left_side ul{
+
+    .document_category_detail_top .left_side ul {
         flex-wrap: wrap;
     }
-    .document_category_detail_top .left_side{
+
+    .document_category_detail_top .left_side {
         align-items: flex-start;
     }
-    .document_category_detail_top .right_side{
+
+    .document_category_detail_top .right_side {
         flex-direction: column;
         margin-top: 24px;
         width: 100%;
     }
-    .document_category_detail_top .right_side button{
+
+    .document_category_detail_top .right_side button {
         width: 100%;
         text-align: center;
         justify-content: center;
     }
-    .nav-tabs{
+
+    .nav-tabs {
         gap: 12px;
     }
-    .form_step_list ul{
+
+    .form_step_list ul {
         flex-direction: column;
         width: 100%;
     }
-    .form_step_list ul li{
+
+    .form_step_list ul li {
         width: 100%;
         max-width: 100%;
     }
-    .button_list{
+
+    .button_list {
         flex-direction: column;
 
     }
+    .mobile_show_img{
+        display: flex!important;
+    }
+    .mobile_show_img img{
+        max-width: 300px;
+    }
+    .section_mini .section_doc{
+        padding: 24px;
+    }
+    .section_title_mid{
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .section_text_mid{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .section_btn{
+        margin-top: 0;
+    }
+    .training_box{
+        padding: 32px;
+        margin-bottom: 24px;
+    }
+    .training_box img{
+        width: 160px;
+        height: 160px;
+    }
+    .section_title_between{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    .training_box h4{
+        font-size: 24px;
+        line-height: 32px;
+    }
 }
-@media(max-width: 375px){
-    .detail_box ul li{
+
+@media (max-width: 375px) {
+    .detail_box ul li {
         flex-direction: column;
     }
 }
