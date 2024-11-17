@@ -84,9 +84,7 @@
 .download_business_plan button span {
     text-align: left;
 }
-.accordion_top{
-    flex-wrap: wrap;
-}
+
 .cloned_inputs .clone_box .single_box label ~ div{
     display: flex;
     gap: 6px;
@@ -197,6 +195,9 @@
 @media (max-width: 991px) {
     .open_mobile_nav{
         display: flex;
+    }
+    .accordion_top{
+        flex-wrap: wrap;
     }
     .header_top .navbar{
         display: none;

@@ -1,0 +1,55 @@
+.header_box_map{
+    position: relative;
+}
+
+.map_box,
+.map_box svg{
+    max-width: 100%;
+    width: 100%;
+}
+.map_box svg path:hover{
+    cursor: pointer;
+    fill: #5e6264;
+}
+.table_box_for_map {
+    position: absolute;
+    display: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.table_box_for_map.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+.table_box_for_map ul{
+    padding: 16px;
+    border-radius: 10px;
+    margin-bottom: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    max-height: 400px;
+    overflow: auto;
+    background-color: rebeccapurple;
+
+}
+.table_box_for_map ul li{
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.table_box_for_map ul li span{
+    font-size: 14px;
+    color: #fff;
+}
+.table_box_for_map ul li p{
+    font-size: 16px;
+    margin-bottom: 0;
+    color: #fff;
+    font-weight: 600;
+}

@@ -1,8 +1,8 @@
 function handleResize() {
     if (window.innerWidth > 991) {
-        document.querySelector('.nav_mobile').classList.add('hide');
+        document.querySelector('.nav_mobile')?.classList.add('hide');
     } else {
-        document.querySelector('.nav_mobile').classList.add('hide');
+        document.querySelector('.nav_mobile')?.classList.add('hide');
     }
 }
 handleResize();
