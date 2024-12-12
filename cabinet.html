@@ -119,7 +119,7 @@
 
         .card button:hover {
             background-color: #6c5ae3;
-            transform: scale(1.05);
+            /*transform: scale(1.05);*/
         }
 
         .footer {
@@ -173,7 +173,41 @@
             background-color: #ffcc00;
             transform: scale(1.05);
         }
+        .additional-section {
+            margin-top: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
 
+        .additional-section h2 {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .additional-section .cards {
+            display: flex;
+            gap: 15px;
+        }
+
+        .additional-section .card {
+            flex: 1;
+            padding: 15px;
+            background: #f4f5f7;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .additional-section .card h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .additional-section .card p {
+            font-size: 14px;
+            color: #666;
+        }
         @media (max-width: 768px) {
             .main-content {
                 grid-template-columns: 1fr;
@@ -314,6 +348,22 @@
                     <div class="card">
                         <h2>Qanunvericilik Təqdimatı</h2>
                         <p>27.10.2024</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="additional-section">
+                <h2>Hüquq bələdçisi və Qanunvericilik Təqdimatı</h2>
+                <div class="cards">
+                    <div class="card">
+                        <h3>Hüquq bələdçisi</h3>
+                        <p>KOBİ Korporasiyasının hüquqşünasları sizə vəziyyəti başa düşməyə və Rusiya Federasiyasının qanunvericiliyinə uyğun olaraq biznes fəaliyyətinin hüquqi xüsusiyyətlərini izah etməyə kömək edəcəkdir.</p>
+                        <p>✓ Pulsuz<br>✓ Onlayn<br>✓ Sorğuların sayı məhdud deyil.</p>
+                        <button>Sual verin</button>
+                    </div>
+                    <div class="card">
+                        <h3>Qanunvericilik Təqdimatı</h3>
+                        <p>Salam növbəti qanunvericilik təqdimatını bizimlə öyrənin.</p>
                     </div>
                 </div>
             </div>
