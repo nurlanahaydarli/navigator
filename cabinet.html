@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <title>Biznes Navigator</title>
+    <style>
+        .header {
+            background: linear-gradient(135deg, #7f6af7, #b983f9);
+            padding: 30px;
+            border-radius: 15px;
+            color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+
+        .header p {
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .header .actions {
+            display: flex;
+            gap: 15px;
+        }
+
+        .header .actions button {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            background-color: #ffd700;
+            color: #333;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s ease, background-color 0.3s ease;
+        }
+
+        .header .actions button:hover {
+            background-color: #ffcc00;
+            transform: scale(1.05);
+        }
+
+        .categories {
+            margin: 20px 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .categories .category {
+            background: #eaeef1;
+            padding: 12px 18px;
+            border-radius: 8px;
+            font-size: 14px;
+            color: #555;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .categories .category:hover {
+            background-color: #d8dce1;
+            transform: translateY(-3px);
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+        }
+
+        .card h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #7f6af7;
+        }
+
+        .card p {
+            margin-bottom: 15px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .card button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 8px;
+            background-color: #7f6af7;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .card button:hover {
+            background-color: #6c5ae3;
+            transform: scale(1.05);
+        }
+
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            color: #aaa;
+            font-size: 14px;
+        }
+        .feature-cards {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .feature-card {
+            flex: 1;
+            background: linear-gradient(135deg, #7f6af7, #9a77f8);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .feature-card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .feature-card p {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .feature-card button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 8px;
+            background-color: #ffd700;
+            color: #333;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s ease, background-color 0.3s ease;
+        }
+
+        .feature-card button:hover {
+            background-color: #ffcc00;
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            .feature-cards {
+                flex-direction: column;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+
+<main class="main_bg">
+    <header>
+        <div class="container">
+            <div class="header_top">
+                <div class="header_nav">
+                    <a href="index.html" class="logo_box">
+                        <img src="assets/img/logo.svg" alt=""/>
+                    </a>
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                    aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page"
+                                           href="legislation.html">Qanunvericilik</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="about.html">Portal haqqında</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="education.html">Maarifləndirmə</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="services.html">Xidmətlər</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="header_auth">
+                    <div class="login_box">
+                        <a href="#">
+                            <img src="assets/img/auth_icon.svg" alt="">
+                            <span>Daxil ol</span>
+                        </a>
+                    </div>
+                    <div class="search_box">
+                        <a href="#">
+                            <img src="assets/img/search-normal.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="lang_box">
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                <span>Az</span> <img src="assets/img/az.png" alt="">
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#"><span>Az</span> <img src="assets/img/az.png"
+                                                                                           alt=""></a></li>
+                                <li><a class="dropdown-item" href="#"><span>Az</span> <img src="assets/img/az.png"
+                                                                                           alt=""></a></li>
+                                <li><a class="dropdown-item" href="#"><span>Az</span> <img src="assets/img/az.png"
+                                                                                           alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="section_padding">
+        <div class="container">
+            <div class="header">
+                <h1>Kərimov Nicat</h1>
+                <p>Onlayn biznesinizi başlamaq, bir neçə kliklə biznesinizi qeydiyyatdan keçirin.</p>
+                <div class="feature-cards">
+                    <div class="feature-card">
+                        <h3>Onlayn biznesə başlamaq</h3>
+                        <p>Dövlət dəstəyi ilə biznesinizi tez bir zamanda başlamaq üçün sizə lazım olan hər şey. Biznesdə ilk addımlarınızı atmağınıza kömək edirik.</p>
+                        <button>Biz tövsiyə edirik</button>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Bir neçə kliklə biznesinizi qeydiyyatdan keçirin</h3>
+                        <p>Biz sizin biznesinizin aparılması formasını və vergitutma rejimini seçməkdə, elektron rəqəmsal imza əldə etməkdə və biznesi qeydiyyatdan keçirməkdə kömək edəcəyik.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Artıq biznesiniz var? Əlavə et</h3>
+                        <p>Rəqəmsal Platformanın bütün xüsusiyyətlərindən istifadə etmək üçün Dövlət Xidmətlərindən biznes əlavə etmək kifayətdir.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="categories">
+                <div class="category">Biznes dəstək tədbirləri</div>
+                <div class="category">Hüquqi balədçi</div>
+                <div class="category">Türizm sahibkarına dəstək</div>
+                <div class="category">Biznes üçün imkan</div>
+                <div class="category">Onlayn biznes başlamaq</div>
+                <div class="category">Qanunvericilik Təqdimatı</div>
+            </div>
+
+            <div class="main-content">
+                <div>
+                    <div class="card">
+                        <h2>Ekspress şarjda yoxlama</h2>
+                        <p>Uğur va inkişaf alın</p>
+                        <button>Test edin</button>
+                    </div>
+
+                    <div class="card">
+                        <h2>Bu gün üçün hadisələr</h2>
+                        <p>Bu gün üçün heç bir tədbir yoxdur</p>
+                    </div>
+
+                    <div class="card">
+                        <h2>Hüquqi balədçi</h2>
+                        <p>Pulsuz suallarınızı verin.</p>
+                        <button>Sual verin</button>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="card">
+                        <h2>Abunəliklər</h2>
+                        <p>Abunəliklər burada olacaq.</p>
+                    </div>
+                    <div class="card">
+                        <h2>Qanunvericilik Təqdimatı</h2>
+                        <p>27.10.2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer">
+        <p>&copy; 2024 Kərimov Nicat. Bütün haqlar qorunur.</p>
+    </div>
+</main>
+<footer>
+    <div class="container">
+        <div class="footer_box">
+            <div class="footer_left">
+                <img src="assets/img/footer_logo.svg" alt="">
+                <ul class="footer_links">
+                    <li>
+                        <a href="#">Qanunvericilik</a>
+                    </li>
+                    <li>
+                        <a href="#">Portal haqqında</a>
+                    </li>
+                    <li>
+                        <a href="#">Xidmətlər</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_right">
+                <ul>
+                    <li><a href="#"><img src="assets/img/fb.svg" alt=""></a></li>
+                    <li><a href="#"><img src="assets/img/insta.svg" alt=""></a></li>
+                    <li><a href="#"><img src="assets/img/x.svg" alt=""></a></li>
+                    <li><a href="#"><img src="assets/img/youtube.svg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <p>© Kiçik və Orta Biznesin İnkişafı Agentliyi </p>
+        </div>
+    </div>
+</footer>
+
+
+<!-- ==========================Modals=========================== -->
+
+<div class="modal fade modal_custom" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Məlumatların daxil edilməsi qaydaları</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.3433 10.3431L21.657 21.6568" stroke="white" stroke-width="1.5"
+                              stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.343 21.6568L21.6567 10.3431" stroke="white" stroke-width="1.5"
+                              stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal_content">
+                    <h3 class="">
+                        Alış qiyməti
+                    </h3>
+                    <p>
+                        Bütün qiymətlərə ƏDV daxildir. Əgər alış ƏDV-siz baş verərsə, məzənnə əvəzinə 0 daxil edilir.
+                    </p>
+                    <h5>Seçimlər</h5>
+                    <div class="modal_table">
+                        <table>
+                            <tr>
+                                <td><span>1</span></td>
+                                <td><p>500 000</p></td>
+                                <td>
+                                    <div class="text_check">
+                                        <input type="checkbox" id="table_1">
+                                        <label for="table_1" class="check_label"></label>
+                                        <label for="table_1" class="text_label">ƏDV daxildir</label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="percent_box">
+                                        <input type="text" placeholder="1">
+                                        <span>%</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="border_text">
+                                        ƏDV xaric 500.000 alış
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span>2</span></td>
+                                <td><p>500 000</p></td>
+                                <td>
+                                    <div class="text_check">
+                                        <input type="checkbox" id="table_2">
+                                        <label for="table_2" class="check_label"></label>
+                                        <label for="table_2" class="text_label">ƏDV daxildir</label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="percent_box">
+                                        <input type="text" placeholder="1">
+                                        <span>%</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="border_text">
+                                        ƏDV xaric 500.000 alış
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><span>3</span></td>
+                                <td><p>500 000</p></td>
+                                <td>
+                                    <div class="text_check">
+                                        <input type="checkbox" id="table_3">
+                                        <label for="table_3" class="check_label"></label>
+                                        <label for="table_3" class="text_label">ƏDV daxildir</label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="percent_box">
+                                        <input type="text" placeholder="1">
+                                        <span>%</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="border_text">
+                                        ƏDV xaric 500.000 alış
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="highlight_text">
+                        Səhifənin altındakı <span class="text_yellow">Disqus</span> bölməsində suallarınızı verə və ya
+                        şərh yaza bilərsiniz .
+                        Siz həmçinin problemlərinizin həllində kömək üçün etibarlı tərəfdaşlarımızdan sorğu göndərə
+                        bilərsiniz (
+                        <a href="#">burada</a> və ya <a href="#">burada</a> ).
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn_dark_blue" data-bs-dismiss="modal">Bağla</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade modal_custom" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel2">Məlumatların daxil edilməsi qaydaları</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.3433 10.3431L21.657 21.6568" stroke="white" stroke-width="1.5"
+                              stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.343 21.6568L21.6567 10.3431" stroke="white" stroke-width="1.5"
+                              stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal_content">
+                    <h3 class="">
+                        Biznes plan nümunələri
+                    </h3>
+                    <div class="modal_list">
+                        <ul>
+                            <li>
+                                <h5>1. Mebel istehsalı</h5>
+                                <p>Mənfi pul axını ilə misal. Xərcləri optimallaşdırmaqla effektiv nəticə əldə etmək
+                                    olar.</p>
+                                <p>Məsələn, mühasibat xidməti əvəzinə uzaqdan mühasibat xidmətlərinə qoşulun.</p>
+                            </li>
+                            <li>
+                                <h5>2. Mini çörək</h5>
+                                <p>Müsbət pul axını ilə üç illik layihə.</p>
+                            </li>
+                            <li>
+                                <h5>3. Toyuq ferması</h5>
+                                <p>Bazar qiymətinin formalaşmasına bir nümunə.</p>
+                            </li>
+                            <li>
+                                <h5>4. Can istehsal sexi</h5>
+                                <p>Mövcud istehsalat daxilində yeni sex açılır. Layihə ilin əvvəlində başlamır.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="highlight_text">
+                        Səhifənin altındakı <span class="text_yellow">Disqus</span> bölməsində suallarınızı verə və ya
+                        şərh yaza bilərsiniz .
+                        Siz həmçinin problemlərinizin həllində kömək üçün etibarlı tərəfdaşlarımızdan sorğu göndərə
+                        bilərsiniz (
+                        <a href="#">burada</a> və ya <a href="#">burada</a> ).
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn_dark_blue" data-bs-dismiss="modal">Bağla</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade modal_custom" id="exampleModal-edv" tabindex="-1" aria-labelledby="exampleModalLabel-edv" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel-edv">ƏDV</h5>
+            </div>
+            <div class="modal-body">
+                <div class="modal_content">
+                    <h3 class="">
+                        Biznes plan nümunələri
+                    </h3>
+                    <div class="modal_inputs">
+                        <div class="text_check">
+                            <input type="checkbox" id="include_edv"
+                                   class="check_plan balance_report_input">
+                            <label for="include_edv" class="check_label"></label>
+                            <label for="include_edv" class="text_label">ƏDV daxil, %</label>
+                        </div>
+                        <input type="text" placeholder="0">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn_dark_blue me-2">Yadda saxla</button>
+                <button type="button" class="btn btn_dark_ghost">Ləğv et</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade modal_custom" id="exampleModal-x" tabindex="-1" aria-labelledby="exampleModalLabel-x" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel-x">Avadanlıqların daşınması və quraşdırılması xərcləri</h5>
+            </div>
+            <div class="modal-body">
+                <div class="modal_content">
+                    <div class="modal_inputs">
+                        <input type="text" placeholder="0">
+                        <span>azn</span>
+                        <div class="text_check">
+                            <input type="checkbox" id="include_x"
+                                   class="check_plan balance_report_input">
+                            <label for="include_x" class="check_label"></label>
+                            <label for="include_x" class="text_label">ƏDV daxil, %</label>
+                        </div>
+                        <input type="text" placeholder="0">
+                        <span>%</span>
+                    </div>
+                    <p>və ya </p>
+
+                    <div class="modal_inputs">
+                        <input type="text" placeholder="0">
+                        <span>dəyərinin %</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn_dark_blue me-2">Yadda saxla</button>
+                <button type="button" class="btn btn_dark_ghost">Ləğv et</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/multi_step.js"></script>
+</body>
+</html>
